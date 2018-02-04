@@ -40,4 +40,8 @@ app.listen(port, function() {
     console.log('parse-server-example running on port ' + port + '.');
 });
 
+let httpServer = require('http').createServer(app);
+httpServer.listen(port);
+var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
+
 ParseServer.createLiveQueryServer(httpServer);
