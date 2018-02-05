@@ -18,7 +18,7 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'http://localhost:' + port + '/parse',
   liveQuery: {
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
-    redisURL: 'redis://h:p90f79484a23d35980c109cc304bc2b4565a0f6acb70fb3c56369d1b768dc18c0@ec2-34-251-172-53.eu-west-1.compute.amazonaws.com:44489'
+    redisURL: process.env.REDIS_URL
   }
 });
 
