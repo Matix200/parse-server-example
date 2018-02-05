@@ -39,7 +39,6 @@ app.listen(port, function() {
 
 var httpServer = require('http').createServer(app);
 httpServer.listen(4040, function() {
-  var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
 });
 
-
+var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
