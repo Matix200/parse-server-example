@@ -18,7 +18,7 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'http://localhost:' + port + '/parse',
   liveQuery: {
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
-    redisURL: process.env.REDIS_URL
+   // redisURL: process.env.REDIS_URL
   }
 });
 
@@ -38,8 +38,10 @@ app.get('/', function(req, res) {
   res.status(200).send('I dream of being a web site.');
 });
 
-var port = process.env.PORT || 1337;
-app.listen(port, function() {
-    console.log('parse-server-example running on port ' + port + '.');
-});
+var httpServer = require('http').createServer(app);
+httpServer.listen(4040);
+var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
 
+app.listen(1337, function() {
+    console.log('parse-server-example running on port 1337.');
+});
