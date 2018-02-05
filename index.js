@@ -33,11 +33,6 @@ var app = express();
 var mountPath = process.env.PARSE_MOUNT || '/parse';
 app.use(mountPath, api);
 
-// Parse Server plays nicely with the rest of your web routes
-app.get('/', function(req, res) {
-  res.status(200).send('I dream of being a web site.');
-});
-
 var httpServer = require('http').createServer(app);
 httpServer.listen(4040);
 var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
