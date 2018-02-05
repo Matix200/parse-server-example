@@ -28,15 +28,18 @@ var api = new ParseServer({
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
 var app = express();
-
-// Serve the Parse API on the /parse URL prefix
 var mountPath = process.env.PARSE_MOUNT || '/parse';
 app.use(mountPath, api);
 
-var httpServer = require('http').createServer(app);
-httpServer.listen(4040);
-var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
 
-app.listen(1337, function() {
+var port = process.env.PORT || 1337;
+app.listen(port, function() {
     console.log('parse-server-example running on port 1337.');
 });
+
+var httpServer = require('http').createServer(app);
+httpServer.listen(4040, function() {
+  var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
+});
+
+
