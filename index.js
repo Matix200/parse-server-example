@@ -16,7 +16,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: 'https://localhost:' + port + '/parse',
+  serverURL: process.env.SERVER_URL || 'https://localhost:' + port + '/parse',
   liveQuery: {
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
   //  redisURL: process.env.REDIS_URL
