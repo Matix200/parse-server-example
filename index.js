@@ -28,6 +28,8 @@ var app = express();
 var mountPath = process.env.PARSE_MOUNT || '/parse';
 app.use(mountPath, api);
 
+app.use('/public', express.static(path.join(__dirname, '/public')));
+
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function(req, res) {
   res.status(200).send('I dream of being a website.  Please star the parse-server repo on GitHub!');
