@@ -20,8 +20,8 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
   //  redisURL: process.env.REDIS_URL
-  }
-  fliesAdapter = new S3Adapter( 
+  },
+filesAdapter: new GCSAdapter(
     "S3_ACCESS_KEY",
     "S3_SECRET_KEY",
     "S3_BUCKET",
