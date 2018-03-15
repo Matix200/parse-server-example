@@ -21,6 +21,14 @@ var api = new ParseServer({
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
   //  redisURL: process.env.REDIS_URL
   }
+  fliesAdapter = new S3Adapter( 
+    "S3_ACCESS_KEY",
+    "S3_SECRET_KEY",
+    "S3_BUCKET",
+  {
+  directAcces:true
+  }
+  )
 });
 var app = express();
 
