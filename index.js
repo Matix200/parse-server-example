@@ -19,7 +19,7 @@ var api = new ParseServer({
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://localhost:' + port + '/parse',
   liveQuery: {
-    classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2"],
+    classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications"],
   //  redisURL: process.env.REDIS_URL
   },
  filesAdapter: new S3Adapter(
