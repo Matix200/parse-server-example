@@ -11,8 +11,8 @@
   "dependencies": {
     "express": "~4.2.x",
     "kerberos": "~0.0.x",
-    "parse": "~1.6.12",
-    "parse-server": "2.7.2",
+    "parse": "~1.8.0",
+    "parse-server": "*"
     "@parse/s3-files-adapter": "~1.x"
   },
   "scripts": {
