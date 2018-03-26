@@ -13,8 +13,8 @@ if (!databaseUri) {
 }
 
 var s3Adapter = new S3Adapter(process.env.S3_ACCESS_KEY,
-                   'process.env.S3_SECRET_KEY', process.env.S3_BUCKET, {
-                    region: process.env.S3_REGION
+                    process.env.S3_SECRET_KEY, process.env.S3_BUCKET, {
+                    region: process.env.S3_REGION,
                     bucketPrefix: '',
                     directAccess: true,
                     baseUrl: 'http://images.example.com',
