@@ -16,7 +16,7 @@ var s3Adapter = new S3Adapter(
                   process.env.S3_ACCESS_KEY,
                   process.env.S3_SECRET_KEY,
                   process.env.S3_BUCKET, {
-                    region: 'eu-central-1'
+                    region: 'eu-central-1',
                     bucketPrefix: '',
                     directAccess: true,
                     baseUrl: 'http://images.example.com',
@@ -35,7 +35,7 @@ var api = new ParseServer({
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications"],
   //  redisURL: process.env.REDIS_URL
   },
- filesAdapter: "@parse/s3-files-adapter"
+ filesAdapter: s3Adapter
 });
 
 var app = express();
