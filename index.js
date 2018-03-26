@@ -3,7 +3,7 @@
 
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
-var S3Adapter = require('parse-server').S3Adapter;
+var S3Adapter = require('@parse/s3-files-adapter');
 var path = require('path');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI
@@ -11,6 +11,16 @@ var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
+
+var s3Adapter = new S3Adapter(process.env.S3_ACCESS_KEY,
+                   'process.env.S3_SECRET_KEY', process.env.S3_BUCKET, {
+                    region: process.env.S3_REGION
+                    bucketPrefix: '',
+                    directAccess: true,
+                    baseUrl: 'http://images.example.com',
+                    signatureVersion: 'v4',
+                    globalCacheControl: 'public, max-age=86400'  // 24 hrs Cache-Control.
+                  });
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
@@ -22,15 +32,7 @@ var api = new ParseServer({
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications"],
   //  redisURL: process.env.REDIS_URL
   },
- filesAdapter: new S3Adapter(
-    process.env.S3_ACCESS_KEY,
-    process.env.S3_SECRET_KEY,
-    process.env.S3_BUCKET,
-    process.env.S3_REGION,
-  {
-  directAcces:true
-  }
-  )
+  filesAdapter: s3adapter
 });
 var app = express();
 
