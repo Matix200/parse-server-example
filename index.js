@@ -17,9 +17,7 @@ var s3Adapter = new S3Adapter(
                   process.env.S3_SECRET_KEY,
                   process.env.S3_BUCKET, {
                     region: 'eu-central-1',
-                    bucketPrefix: '',
                     directAccess: true,
-                    baseUrl: 'http://images.example.com',
                     signatureVersion: 'v4',
                     globalCacheControl: 'public, max-age=86400'  // 24 hrs Cache-Control.
                   });
