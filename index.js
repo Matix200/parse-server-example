@@ -31,7 +31,8 @@ var api = new ParseServer({
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications"],
   //  redisURL: process.env.REDIS_URL
   },
- filesAdapter: s3Adapter
+ filesAdapter: s3Adapter,
+ fileKey: process.env.PARSE_FILE_KEY
 });
 
 var app = express();
