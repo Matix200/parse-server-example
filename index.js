@@ -31,7 +31,7 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'https://localhost:' + port + '/parse',
   javascriptKey: process.env.JS_KEY || '',
   liveQuery: {
-    classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications", "Friends", "Message"],
+    classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications", "FriendsInvate", "Message"],
   //  redisURL: process.env.REDIS_URL
   },
  filesAdapter: s3Adapter
