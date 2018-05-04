@@ -34,7 +34,21 @@ var api = new ParseServer({
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications", "Friends", "Message"],
   //  redisURL: process.env.REDIS_URL
   },
- filesAdapter: s3Adapter
+ filesAdapter: s3Adapter,
+ verifyUserEmails: true,
+  appName: 'Your App Name',
+  publicServerURL: 'https://yourappaddress.com/parse',
+  emailAdapter: {
+    module: 'parse-server-simple-mailgun-adapter',
+    options: {
+      // The address that your emails come from 
+      fromAddress: process.env.EMAIL_FROM,
+      // Your domain from mailgun.com 
+      domain: process.env.MAILGUN_DOMAIN,
+      // Your API key from mailgun.com 
+      apiKey: process.env.MAILGUN_API_KEY,
+    }
+  }
 });
 
 var app = express();
