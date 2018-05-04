@@ -36,8 +36,8 @@ var api = new ParseServer({
   },
  filesAdapter: s3Adapter,
  verifyUserEmails: true,
-  appName: 'Your App Name',
-  publicServerURL: 'https://yourappaddress.com/parse',
+  appName: process.env.APP_ID,
+  publicServerURL: process.env.SERVER_URL,
   emailAdapter: {
     module: 'parse-server-simple-mailgun-adapter',
     options: {
