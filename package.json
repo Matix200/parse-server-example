@@ -13,7 +13,8 @@
     "kerberos": "~0.0.x",
     "parse": "~1.8.0",
     "parse-server": "*",
-    "@parse/s3-files-adapter": "~1.x"
+    "@parse/s3-files-adapter": "~1.x",
+    "@parse/parse-server-simple-mailgun-adapter": "~1.x"
   },
   "scripts": {
     "start": "node index.js"
