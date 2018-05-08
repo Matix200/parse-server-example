@@ -46,7 +46,7 @@ var api = new ParseServer({
       // Your domain from mailgun.com 
       domain: process.env.MAILGUN_DOMAIN,
       // Your API key from mailgun.com 
-      apiKey: process.env.MAILGUN_API_KEY,
+      apiKey: process.env.MAILGUN_API_KEY
     }
   }
 });
