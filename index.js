@@ -39,7 +39,7 @@ var api = new ParseServer({
   appName: process.env.APP_ID,
   publicServerURL: process.env.SERVER_URL,
   emailAdapter: {
-    module: 'parse-server-simple-mailgun-adapter',
+    module:'@parse/simple-mailgun-adapter',
     options: {
       // The address that your emails come from 
       fromAddress: process.env.EMAIL_FROM,
