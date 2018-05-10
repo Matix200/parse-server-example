@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<link rel="stylesheet" href="css/cryptocss.css" type="text/css"/>
+        <script type="text/javascript" src="js/parse.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
+				<script src="js/jquery.easy-autocomplete.js"></script> 
+		<link rel="stylesheet" href="css/easy-autocomplete.css"> 
+		<script src="js/crypto.js"></script> 
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+ 
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+		
+		
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css"  />
+		
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+      <!--======= header =======-->
+      <header>
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+					<a id="main-category-toggler" class="hidden-md hidden-lg hidden-md"  href="#">
+                    	<i class="fa fa-navicon"></i>
+                    </a>
+					<a id="main-category-toggler-close" class="hidden-md hidden-lg hidden-md" href="#">
+                    	<i class="fa fa-close"></i>
+                    </a>
+                    <div id="logo">
+                        <a href="01-home.html"><img src="" alt=""></a>
+                    </div>
+                </div><!-- // col-md-2 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs hidden-sm">
+                    <div class="search-form">
+                        <form id="search" action="#" method="post">
+                            <input type="text" id="SearchCrypto" placeholder="Search here cryptocurrency..."/>
+                            <input type="submit" value="Keywords" />
+                        </form>
+                    </div>
+                </div><!-- // col-md-3 -->
+                <div class="col-lg-3 col-md-3 col-sm-5 hidden-xs hidden-sm">
+                    <ul class="top-menu">
+ <li><a href="01-home.html" id="MyAllInvest"><i class="fa fa-btc"></i> 0.00000000 BTC / <i class="fa fa-dollar"></i>  0.00 USD</a></li>                        
+                    </ul>
+                </div><!-- // col-md-4 -->
+                <div class="col-lg-2 col-md-2 col-sm-4 hidden-xs hidden-sm">
+                    <ul class="notifications">                        
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-users"></i>
+                            <span class="badge badge-color1 header-badge" id="FriendsInvateCount">0</span>
+                        </a>
+                              <ul class="dropdown-menu dropdown-menu-friend-requests ">
+                                <div id="FriendsInvate">
+
+                          </div>
+                              </ul>
+                        </li>
+                 <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="fa fa-bell-o"></i>
+                        	<span class="badge badge-color3 header-badge" id="NotificationsCount">0</span>
+                        </a>
+						<ul  class="dropdown-menu dropdown-notifications-items ">
+                          <div id="NotificationsPush">
+						  
+						  
+						  
+						  </div>
+                         <li><a href="#" class="all_notifications">All Notifications</a></li>   
+                        </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-sm">
+					  <div class="dropdown">
+                        <a data-toggle="dropdown" href="#" class="user-area">
+                            <div class="thumb"><img src="demo_img/user-1.png" alt=""></div>
+                            <h2 id="Mail"></h2>
+<i class="fa fa-angle-down"></i>
+                        </a>
+						<ul class="dropdown-menu account-menu">
+                           <li><a  class="logout" href="#"><i class="fa fa-sign-out color-4"></i>sign out</a></li>
+                        </ul>
+    				</div>
+                </div>
+            </div><!-- // row -->
+        </div><!-- // container-full -->
+      </header><!-- // header -->
+
+      <div id="main-category">
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-md-12">
+                    <ul id="AllCryptoO" class="main-category-menu">                      
+                      
+					</ul>
+                </div><!-- // col-md-14 -->
+              </div><!-- // row -->
+          </div><!-- // container-full -->
+      </div><!-- // main-category -->
+
+	  <div class="site-output">
+      	<div class="col-md-2 no-padding-left hidden-sm hidden-xs">
+        	<div class="left-sidebar">
+            	<div id="no-sidebar-stick" >
+            	<ul class="menu-sidebar">
+					<li><a href="main.html"><i class="fa fa-home"></i>Dashboard</a></li>
+					<li><a href="cryptocurrency.html"><i class="fa fa-btc"></i>Cryptocurrency</a></li>
+					<li><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+                	<li><a href="signals.html"><i class="fa fa-bolt"></i>Signals</a></li>
+					</ul>
+					<ul class="menu-sidebar" id="AllGroups">
+					</ul>
+                </ul>
+				<ul class="menu-sidebar">
+                	<li><a href="editprofil.html"><i class="fa fa-edit"></i>edit profile</a></li>
+                	<li><a href="#"><i class="fa fa-sign-out"></i>sing out</a></li>
+                </ul>
+                </div><!-- // sidebar-stick -->
+                <div class="clear"></div>
+            </div><!-- // left-sidebar -->
+        </div><!-- // col-md-2 -->
+<div id="mySidenav" class="sidenav">
+<div id="sidepanel">
+        <div id="profile">
+            <div class="wrap">
+                <img id="profile-img" src="http://emilcarlsson.se/assets/mikeross.png" class="online" alt="" />
+                <p id="MyNickName"></p>
+            </div>
+        </div>
+        <div id="search">
+            <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+            <input type="text" placeholder="Search contacts..." />
+        </div>
+        <div id="contacts">
+            <ul id="MyAllFriends">
+
+          
+            </ul>
+        </div>
+        <div id="bottom-bar">
+            <button id="addcontact"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> <span>Add contact</span></button>
+            <button id="settings-hide"><i id="arrow" class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <span>Hide contact</span></button>
+        </div>
+</div>
+
+</div>
+<div id="AllUserChats"></div>
+<div id="all-output" class="col-md-12">
+
+    <div id="category-cover-image">
+                <div class="image-in">
+                    <img src="demo_img/category-img.jpg" alt="">
+                </div>
+                <h1 class="title"><i class="fa fa-users"></i> Groups</h1>
+                <ul class="category-info">
+                    <li>25 Free Groups </li>
+                    <li class="subscribe">30 Premium Groups</li>
+                </ul>
+            </div>
+<div id="history2">
+<div class="filter">
+<div class="row"><div class="col-md-8">
+                            <ul class="nav nav-tabs nav-justified indigo" id="myTab" role="tablist">    
+<li class="nav-item active"><a  class="nav-link active" data-toggle="tab" role="tab" href="#AllGroupsInfo"><i class="fa fa-star"></i> Premium Groups</a></li>
+<li class="nav-item"><a  class="nav-link" data-toggle="tab" role="tab" href="#GrupFree"><i class="fa fa-square"></i> Free Groups</a></li>
+<li class="nav-item"><a  class="nav-link" data-toggle="tab" role="tab" href="#CreateGroup"><i class="fa fa-plus"></i> Create Group</a></li>
+                                
+                            </ul>
+                        </div><!-- // col-md-8 -->
+                        <div class="col-md-4">
+                            <div class="search-form">
+                                <form id="search_history" action="#" method="post">
+                                    <input type="text" id="SearchGroup" placeholder="Search group here..."/>
+                                    <input type="submit" value="Keywords" />
+                                </form>
+                            </div>
+                            <ul class="searchedChanel" id="AllSearched">
+                                
+                            </ul>
+                        </div><!-- // col-md-4 -->
+                    </div><!-- // row -->   
+        </div>
+</div>
+
+                    <div class="col-md-12">
+<div class="tab-content">
+                        
+
+                            <div class="tab-pane row active" role="tabpanel" id="AllGroupsInfo">
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+                            <!-- Playlist Item -->
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+                            <!-- Playlist Item -->
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+                            <!-- Playlist Item -->
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+                            <!-- Playlist Item -->
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+                            <!-- Playlist Item -->
+                            <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                   <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num"><i class="fa fa-btc"></i>0.01</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Playlist Item -->
+
+
+
+<div class="page-nation"><ul class="pagination"><li class="disabled"><span>«</span></li><li><span>1</span></li><li class="disabled"><span>...</span></li><li></li><li><a rel="next" href="#">Next</a></li></ul></div>
+
+                        <!-- Loading More Videos -->
+                        <div id="loading-more">
+                            <i class="fa fa-refresh faa-spin animated"></i> <span>Loading more</span>
+                        </div>
+                        <!-- // Loading More Videos -->
+</div><div class="tab-pane row" id="GrupFree">
+    <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                   <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num">Free</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                               <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                   <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num">Free</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                   <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num">Free</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-4 col-md-4 col-sm-2">
+                                <div class="playlist-item">
+                                   <div class="thumb-playlist">
+                                        <div class="img-in">
+                                            <a href="#"><img src="demo_img/v2.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#" class="paly"><i class="fa fa-users"></i>25</a>
+                                        <div class="video-num">Free</div>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <a href="#" class="title">Wczesne Sygnały</a>
+                                        <a class="channel-name" href="#">Rabie Elkheir<span>
+                                        <i class="fa fa-check-circle"></i></span></a>
+                                        <span class="views"><i class="fa fa-eye"></i>2.8M views </span>
+                                        <span class="date"><i class="fa fa-clock-o"></i>5 months ago </span>
+                                    </div>
+                                </div>
+                            </div>   
+
+</div>
+<div class="tab-pane row" id="CreateGroup">
+
+<div class="col-lg-6 col-md-6 col-sm-4">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="createNewGroup">
+                                            <h2>Free Group</h2>
+                                        </div>
+                               
+                                    </div>
+                                    <div class="playlist-info">
+<ul class="pricing__content"><li> Liczba użytkowników: <b>50</b></li><li> Liczba projektów: <b>bez limitu</b></li><li> CRM: <b>TAK</b></li><li> Zarządzanie projektami: <b>TAK</b></li><li> Kalendarz: <b>TAK</b></li><li> Komunikator: <b>TAK</b></li><li> Dysk: <b>20GB</b></li><li> Pomoc (mail) <b>TAK</b></li><li> Backup danych <b>TAK</b></li></ul>
+                                    </div>
+                                    <button kind="Free" class="createGroup">Create</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-4">
+                                <div class="playlist-item">
+                                    <div class="thumb-playlist">
+                                        <div class="createNewGroup">
+                                            <h2>Premium Group</h2>
+                                        </div>
+                                    </div>
+                                    <div class="playlist-info">
+<ul class="pricing__content"><li> Liczba użytkowników: <b>50</b></li><li> Liczba projektów: <b>bez limitu</b></li><li> CRM: <b>TAK</b></li><li> Zarządzanie projektami: <b>TAK</b></li><li> Kalendarz: <b>TAK</b></li><li> Komunikator: <b>TAK</b></li><li> Dysk: <b>20GB</b></li><li> Pomoc (mail) <b>TAK</b></li><li> Backup danych <b>TAK</b></li></ul>
+                                    </div>
+                                    <button kind="Premium"  class="createGroup">Create</button>
+                                </div>
+                            </div>
+
+</div>
+</div>
+                        
+
+</div>
+                </div><!-- // row -->
+            </div>
+            <!-- // category -->
+
+
+
+    <div id="AddFriend" title="Add Friend" class="confirmNotifi">
+        <div class="content">
+            <div class="title">
+                <label for="modern">Search NickName</label>
+                <input type="text" id="inputFriends"/>
+            </div>
+            <div class="searched">
+
+
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+<script src="js/jquery.sticky-kit.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-blog.min.js"></script>
+
+<script type="text/javascript">
+Parse.initialize("cryptonsignals", "sjkfbkbagrheilhjfgakebgafevdgkjaflsvdgkjav");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+var AllCoins = [];
+var MyMenuCoins = [];
+var MyCoinsMenu = [];
+var MyCoinsInvest = [];
+var MyCoinsAlert = [];
+var AllBinanceData;
+var AllBittrexData;
+
+var currentUser = Parse.User.current();
+        if (currentUser) {
+       console.log("jest użytkownik");
+var email = Parse.User.current().get("email");
+var Nick = Parse.User.current().get("NickName");
+$("#MyNickName").text(Nick);
+if(currentUser.get("IMGfile")){ var curl = currentUser.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+$("#profile-img").attr("src", curl) 
+$("#ProfilImage").attr("src", curl)            
+$("#Mail").text(email);    
+} else {
+       location.href = 'index.html';
+}
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
+
+
+
+ $( function() {
+    $( "#AddFriend" ).dialog({
+      autoOpen: false,
+    });
+  } );
+
+      $(document).on('click', '#addcontact', function(){
+      $( "#AddFriend" ).dialog( "open" );
+    });
+    
+
+     $(document).on('click', '.createGroup', function(){
+        if($(this).attr("kind") == "Free"){
+            location.href = "createfreegroup.html";
+        }else{
+            location.href = "createpremiumgroup.html";
+        }
+});
+
+    
+    
+
+function numberWithSpaces(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
+
+
+
+var AllTypesJSON2 = [];
+var AllTypesJSON = [];
+  function getTypes(){
+var AllTypes = [];
+var AllTypes2 = [];
+AllTypesJSON = [];
+AllTypesJSON2 = [];
+  var Bittrex = Parse.Object.extend("Bittrex");
+  var Binance = Parse.Object.extend("Binance");
+    var Query_Binance = new Parse.Query(Binance);
+    Query_Binance.exists("Chart");
+	Query_Binance.limit(250);
+	Query_Binance.include("CryptoCurrency");
+    Query_Binance.find().then(function(BinanceCoins){
+	for(var i in BinanceCoins){
+    var Coin = BinanceCoins[i].get("Chart");
+	var CoinName = BinanceCoins[i].get("CoinName");
+	var Pointer = BinanceCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	if(AllTypes2.indexOf(CoinName) > -1){}else{
+	AllTypes2.push(CoinName);
+	AllTypesJSON2.push({CoinNames: CoinName ,IMGfile: IMG});
+	}
+	AllTypesJSON.push({ALL: Coin+":"+CoinName, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+	var Query_Bittrex = new Parse.Query(Bittrex);
+	Query_Bittrex.exists("Chart");
+	Query_Bittrex.limit(250);
+	Query_Bittrex.include("CryptoCurrency");
+    Query_Bittrex.find().then(function(BittrexCoins){
+	for(var i in BittrexCoins){
+    var Coin = BittrexCoins[i].get("Chart");
+	var CoinName = BittrexCoins[i].get("CoinName");
+	var Pointer = BittrexCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	if(AllTypes2.indexOf(CoinName) > -1){}else{
+	AllTypes2.push(CoinName);
+	AllTypesJSON2.push({CoinNames: CoinName, IMGfile: IMG});
+	}
+	AllTypesJSON.push({ALL: Coin+":"+CoinName, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+
+var options = {
+	data: AllTypesJSON,
+	list: {
+		maxNumberOfElements: 12,
+		match: {
+			enabled: true
+		},
+        onClickEvent: function() {
+			let coin  = $("#SearchCrypto").getSelectedItemData().IMGfile;
+            let ALL  = $("#SearchCrypto").getSelectedItemData().ALL;
+            var alltosplit = ALL.split(':');
+            var link = "crypto.html#"+coin+"#"+alltosplit[0]+":"+alltosplit[1];
+            location.href = link;
+            
+
+		}
+	},
+	getValue: "ALL",
+	template: {
+		type: "custom",
+		method: function(value, item) {
+			return "<img class='imgsearch' src='coins/"+item.IMGfile+".png'><b>" + item.CoinNames + "</b> | " + item.Pair + " | " + item.Exchange;
+		}
+	}
+};
+getAlltoAdd();
+$("#SearchCrypto").easyAutocomplete(options);	
+	
+
+});
+});
+}
+
+function getAlltoAdd(){
+
+var options2 = {
+	data: AllTypesJSON2,
+	list: {
+		maxNumberOfElements: 12,
+		match: {
+			enabled: true
+		}
+	},
+	getValue: "CoinNames",
+	template: {
+		type: "custom",
+		method: function(value, item) {
+			return "<img class='imgsearch' src='coins/"+item.IMGfile+".png'><b>" + item.CoinNames + "</b>";
+		}
+	}
+};
+var ALLTOP2 = $("#searchCalendar").easyAutocomplete(options2);
+
+}
+    
+    
+    
+
+	  
+function toFixed(num, fixed) {
+    fixed = fixed || 0;
+    fixed = Math.pow(10, fixed);
+    return Math.floor(num * fixed) / fixed;
+} 
+
+
+
+SubscribeMyMessage();
+GetSubscribeFriends();
+GetSubscribeAcceptedFriends();
+GetMyFriends();
+GetFriendsInvate();
+
+getMyCurrency();
+getAllGroups();
+getMyInvests();
+getMyNotifications();
+getMyNotificationsContent();    
+GetAllPushNotifications();
+getTypes();
+</script>
+	</body>
+</html>

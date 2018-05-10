@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<link rel="stylesheet" href="css/cryptocss.css" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/parse.js"></script>
+		<link rel="stylesheet" type="text/css" src="css/jquery.dataTables.css"> 
+		<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
+		<script src="js/jquery.easy-autocomplete.js"></script> 
+		<link rel="stylesheet" href="css/easy-autocomplete.css"> 
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css"  />
+		
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body style="background-color: #777; color: #000" >
+<input class="search-crypto" onkeyup="myFunction()" id="searchcrypto" type="text" placeholder="Search here cryptocurrency..."/>
+		<table id="Allcrypto" class="table">						
+	<thead>
+		<tr>
+		<th>
+				LP.
+			</th>
+		<th onclick="sortTable(20)">
+				IMG(S)
+			</th>
+			<th onclick="sortTable(0)">
+				IMG(M)
+			</th>
+			<th onclick="sortTable(1)">
+				Coin Name
+			</th>
+			<th onclick="sortTable(2)">
+				IMGFILE
+			</th>
+			<th onclick="sortTable(3)">
+				AddImage
+			</th>
+			<th onclick="sortTable(10)">
+				Website
+			</th>
+			<th onclick="sortTable(3)">
+				Twitter
+			</th>
+			<th onclick="sortTable(4)">
+				Facebook
+			</th>
+			<th onclick="sortTable(5)">
+				Medium
+			</th>
+			<th onclick="sortTable(6)">
+				Telegram
+			</th>
+			<th onclick="sortTable(7)">
+				Reddit
+			</th>
+			<th onclick="sortTable(8)">
+				Bitcointalk
+			</th>
+			<th onclick="sortTable(9)">
+				GitHub
+			</th>
+			<th onclick="sortTable(11)">
+				Youtube
+			</th>
+			<th>
+				<i class="fa fa-floppy-o"></i>
+			</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+
+	</tbody>
+</table>
+        	
+<script src="js/jquery.sticky-kit.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-blog.min.js"></script>
+
+<script type="text/javascript">
+Parse.initialize("cryptonsignals");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+var symbolcoin = [];
+var MyMenuCoins = [];
+var MarketCoins = [];
+var MarketCoinsBittrex = [];
+var table;
+var AllBinanceData;
+var AllBittrexData;
+
+
+
+
+function ShowAll(){
+
+var rekordyMarket = '';
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+    var Query_CryptoCurrency = new Parse.Query(CryptoCurrency);
+    Query_CryptoCurrency.exists("CoinName");
+	Query_CryptoCurrency.limit(350);
+	Query_CryptoCurrency.ascending("CoinName");
+	Query_CryptoCurrency.find().then(function(CryptoCurrency){
+	for (var i in CryptoCurrency){
+    var CoinName = CryptoCurrency[i].get("CoinName");
+	var Symbol = CryptoCurrency[i].get("Symbol");
+	var IMGfile = CryptoCurrency[i].get("IMGfile");
+	var Twitter = CryptoCurrency[i].get("Twitter");
+	var Facebook = CryptoCurrency[i].get("Facebook");
+	var Medium = CryptoCurrency[i].get("Medium");
+	var Telegram = CryptoCurrency[i].get("Telegram");
+	var Reddit = CryptoCurrency[i].get("Reddit");
+	var Bitcointalk = CryptoCurrency[i].get("Bitcointalk");
+    var GitHub = CryptoCurrency[i].get("Github");
+	var Website = CryptoCurrency[i].get("Website");
+	var Youtube = CryptoCurrency[i].get("Youtube");
+
+	if(typeof Twitter == 'undefined') { Twitter = 'undefined';}
+	if(typeof Facebook == 'undefined') { Facebook = 'undefined';}
+	if(typeof Medium == 'undefined') { Medium = 'undefined';}
+	if(typeof Telegram == 'undefined') { Telegram = 'undefined';}
+	if(typeof Reddit == 'undefined') { Reddit = 'undefined';}
+	if(typeof Bitcointalk == 'undefined') { Bitcointalk = 'undefined';}
+	if(typeof GitHub == 'undefined') { GitHub = 'undefined';}
+	if(typeof Website == 'undefined') { Website = 'undefined';}
+	if(typeof Youtube == 'undefined') { Youtube = 'undefined';}
+
+rekordyMarket += '<tr class="Uptated'+Symbol+'">';
+rekordyMarket += '<td symbol="'+Symbol+'">'+i+'</td>';
+rekordyMarket += '<td><img  src="coins/'+IMGfile+'.png"></td>';
+rekordyMarket += '<td><img  src="coins/64x64/'+IMGfile+'.png"></td>';
+rekordyMarket += '<td>'+CoinName+'</td>';
+rekordyMarket += '<td>'+IMGfile+'</td>';
+rekordyMarket += '<td><form action="upload.php" method="post" enctype="multipart/form-data">Select image to upload:<input type="file" name="fileToUpload" id="fileToUpload"><input type="submit" value="Upload Image" name="submit"></form></td>';
+rekordyMarket += '<td><input type="text" class="We'+Symbol+'" value="'+Website+'" Website="'+Website+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Tw'+Symbol+'" value="'+Twitter+'" Twitter="'+Twitter+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Fa'+Symbol+'" value="'+Facebook+'" Facebook="'+Facebook+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Me'+Symbol+'" value="'+Medium+'" Medium="'+Medium+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Te'+Symbol+'" value="'+Telegram+'" Telegram="'+Telegram+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Re'+Symbol+'" value="'+Reddit+'" Reddit="'+Reddit+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Bi'+Symbol+'" value="'+Bitcointalk+'" Bitcointalk="'+Bitcointalk+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Gi'+Symbol+'" value="'+GitHub+'" GitHub="'+GitHub+'"></input></td>';
+rekordyMarket += '<td><input type="text" class="Yo'+Symbol+'" value="'+Youtube+'" Youtube="'+Youtube+'"></input></td>';
+rekordyMarket += '<td><i id="Saveuptade" class="fa fa-floppy-o"></i></td>';
+rekordyMarket += '</tr>';
+	
+	}
+
+$( "#Allcrypto tbody" ).html( rekordyMarket );
+
+});
+}
+
+$(document).on('click', '#Saveuptade', function(){
+row = $(this).parents('tr');
+var symbol = $(row.children().get(0)).attr("symbol");
+var Twitter = $(".Tw"+symbol).val();
+var Facebook = $(".Fa"+symbol).val();
+var Medium = $(".Me"+symbol).val();
+var Telegram = $(".Te"+symbol).val();
+var Reddit = $(".Re"+symbol).val();
+var Bitcointalk = $(".Bi"+symbol).val();
+var GitHub = $(".Gi"+symbol).val();
+var Website = $(".We"+symbol).val();
+var Youtube = $(".Yo"+symbol).val();
+    
+    
+    
+
+console.log(GitHub);
+
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+var Query = new Parse.Query(CryptoCurrency);
+console.log(symbol);
+Query.equalTo("Symbol",symbol);
+Query.first().then(function(crypto){
+
+
+    
+console.log(crypto);
+if(typeof Twitter == 'undefined') { }else{crypto.set("Twitter", Twitter); }
+if(typeof Facebook == 'undefined') {}else{  crypto.set("Facebook", Facebook);}
+if(typeof Medium == 'undefined') { }else{ crypto.set("Medium", Medium); }
+if(typeof Telegram == 'undefined') {}else{  crypto.set("Telegram", Telegram); }
+if(typeof Reddit == 'undefined') { }else{ crypto.set("Reddit", Reddit); }
+if(typeof Bitcointalk == 'undefined') { }else{ crypto.set("Bitcointalk", Bitcointalk);}
+if(typeof GitHub == 'undefined') { }else{ crypto.set("Github", GitHub);}
+if(typeof Website == 'undefined') { }else{ crypto.set("Website", Website);}
+if(typeof Youtube == 'undefined') {}else{  crypto.set("Youtube", Youtube);}
+    
+
+	 crypto.save();
+$('.Uptated'+symbol).css("color","#fc00c2");
+
+});      
+
+});
+
+
+
+
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("Allcrypto");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function myFunction() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("searchcrypto");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("Allcrypto");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+
+
+
+ShowAll();
+
+</script>
+	</body>
+</html>

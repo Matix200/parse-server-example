@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<link rel="stylesheet" href="css/cryptocss.css" type="text/css"/>
+        <script type="text/javascript" src="js/parse.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
+		<script src="https://cdn.temasys.io/adapterjs/0.15.x/adapter.screenshare.min.js"></script>
+		<script src="https://cdn.temasys.com.sg/adapterjs/0.11.x/adapter.debug.js"></script>
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css"  />
+		
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+<script type="text/javascript">
+Parse.initialize("cryptonsignals");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+var MarketBTCArray = ['VTC', 'DOGE','PPC','LTC','FTC', 'RDD', 'NXT','DASH', 'POT','BLK','XMY','AUR','EFL','GLD','SLR','PTC','GRS','NLG','RBY','XVC','MONA','THC','ENRG','ERC','VRC','CURE','XMR','CLOAK','START','KORE','XDN','TRUST','NAV','XST','VIA','PINK', 'IOC', 'CANN','SYS','NEOS','DGB','BURST','EXCL','SWIFT','DOPE','BLOCK','ABY','BYC','XMG','BLITZ','BAY','FAIR','SPR','VTR','XRP','EMC2','COVAL','NXS','XCP','BITB','GEO','FLDC','GRC','FLO','NBT','GAME','MUE','XEM','CLAM','DMD','GAM','SPHR','OK','SNRG','PKB','CPC','AEON','ETH','GCR','TX','BCY','EXP','INFX','OMNI','AMP','AGRS','XLM','CLUB','VOX','EMC','FCT','MAID','EGC','SLS','RADS','DCR','BSD','XVG','PIVX','XVC','MEME','STEEM','2GIFE','ELSK','PDC','BRK','WAVES','RISE','LBC','SBD','BRX','ETC','STRAT','UMB','SYNX','EBST','VRM','SEQ','REP','SHIFT','ARDR','XZC','NEO','ZEC','ZCL','IOP','GOLOS','UBQ','KMD','GBG','SIB','ION','LMC','QWARK','CRW','SWT','MLN','ARK','DYN','TKS','MUSIC','DTB','INCNT','GBYTE','GNT','NXC','EDG','LGD','TRST','WINGS','RLC','GNO','GUP','LUN','HMQ','ANT','SC','BAT','ZEN','1ST','QRL','CRB','PTOY','CFI','BNT','NMR','SNT','DCT','XEL','NCO','ADT','FUN','PAY','STORJ','ADX','OMG','CVC','PART','QTUM','BCH','DNT','ADA','MANA','SALT','TIX','RCN','VIB','MER','POWR','BTG','ENG','UKG','IGNIS'];
+var MarketETHArrayBN = ['ADA','ADX','AE','AION','AMB','APPC','ARK','ARN','AST','BAT','BCC','BCD','BCPT','BLZ','BNB','BNT','BRD','BTG','BTS','CDT','CHAT','CMT','CND','CTR','DASH','DGD','DLT','DNT','EDO','ELF','ENG','ENJ','EOS','ETC','EVX','FUEL','FUN','GTO','GVT','GXS','HCR','ICN','ICX','INS','IOST','IOTA','KMD','KNC','LEND','LINK','LRC','LSK','LTC','LUN','MANA','MCO','MDA','MOD','MTH','MTL','NANO','NAV','NEBL','NEO','NULS','OAX','OMG','OST','PIVX','POE','POWR','PPT','QSP','QTUM','RCN','RDN','REQ','RLC','RPX','SALT','SMGLS','SNM','SNT','STEEM','STORJ','STRAT','SUB','TNB','TRIG','TRX','VEN','VIA','VIB','VIBE','WABI','WAVES','WINX','WTC','XLM','XMR','XRP','XVG','XZC','YOYO','ZEC','ZRX'];
+var MarketBNBArrayBN =['ADX','AE','AION','AMB','APPC','BAT','BCC','BCPT','BLZ','BRD','CMT','CND','DLT','GTO','ICX','IOTA','LSK','LTC','MCO','NANO','NAV','NEBL','NEO','NULS','OST','PIVX','POWR','QSP','SCN','RDN','RLC','XRP','STEEM','TRIG','VEN','VIA','WABI','WAVES','WTC','XLM','XZC','YOYO'];
+var MarketBittrexUSDTArray = ['BTC','LTC','XRP','ETH','ETC','NEO','ADA','BCC','XVG','OMG','BTG','XMR','ZEC','DASH','NXT'];
+var MarketBittrexETHArray = ['ETC','GNT','REP','WINGS','GUP','RLC','LUN','GNO','HMQ','TRST','ANT','BAT','1ST','QRL','CRB','RGD','PTOY','CFI','PNT','NMR','LTC','XRP','SNT','MCO','ADT','PAY','STORJ','ADX','DASH','SC','ZEC','OMG','CVC','QTUM','XMR','XEM','XLM','NEO','BCC','DNT','WAVES','STRAT','DGB','FCT','MANA','SALT','TIX','RCN','VIB','POWR','BTG','ADA','ENG','UKG','SRN','WAX'];
+
+
+
+// Binance
+var MarketETHArrayBinance = [];
+var MarketETHArray = [];
+
+
+
+function ALL(){
+for(var a in MarketBittrexETHArray){
+AddCoinBittrex(MarketBittrexETHArray[a]);
+}
+}
+
+function Add(){
+for(var a in MarketBNBArrayBN){
+AddCoinBinance(MarketBNBArrayBN[a]);
+}
+}
+
+function AddCoinBittrex(id){
+var pair = 'ETH';
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+var Query = new Parse.Query(CryptoCurrency);
+	Query.equalTo("Symbol", id);
+Query.first({
+ success: function(objectx) {
+	var CoinName = objectx.get("CoinName");
+	var idC = objectx.id;
+	var Bittrex = Parse.Object.extend("Bittrex");
+	var Bittrex = new Bittrex();
+    Bittrex.set("CoinName", CoinName);
+	Bittrex.set("Symbol", id);
+	Bittrex.set("Chart", "BITTREX:"+id+pair);
+	Bittrex.set("CryptoCurrency", CryptoCurrency.createWithoutData(idC));
+	Bittrex.set("Market", pair);
+	Bittrex.save();
+	console.log(id+": Git");
+	 },
+  error: function(error) {
+    console.log("Error: "+error.message);
+  }
+});
+}
+
+
+function AddCoinBinance(id){
+var pair = 'BNB';
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+var Query = new Parse.Query(CryptoCurrency);
+	Query.equalTo("Symbol", id);
+Query.first({
+ success: function(objectx) {
+	var CoinName = objectx.get("CoinName");
+	var idC = objectx.id;
+	var Binance = Parse.Object.extend("Binance");
+	var Binance = new Binance();
+    Binance.set("CoinName", CoinName);
+	Binance.set("Symbol", id);
+	Binance.set("Chart", "BINANCE:"+id+pair);
+	Binance.set("CryptoCurrency", CryptoCurrency.createWithoutData(idC));
+	Binance.set("Market", pair);
+	Binance.save();
+	console.log(id+": Git");
+	 },
+  error: function(error) {
+    console.log("Error: "+error.message);
+  }
+});
+}
+
+
+
+ALL();
+
+
+
+function getSupply(){
+var url =  "https://api.coinmarketcap.com/v1/ticker/?start=277&limit=30";
+$.ajax({
+    url: url,
+    type: "GET",     
+    dataType : 'json', //ustawiamy typ danych na json
+    success : function(json) {      
+var Prices = json;
+for(var c in Prices){
+var id = Prices[c].id;
+var suply = Prices[c].available_supply;
+getCrypto(id, suply);
+}
+							      
+    },
+    complete: function() {
+        $("#loading").hide();
+    },
+    error: function() {
+        console.log( "Wystąpił błąd w połączeniu :(");
+    }
+});
+
+}
+
+
+function getCrypto(id, suply) {
+    var Query = new Parse.Query("CryptoCurrency");
+	Query.equalTo("IMGfile", id);
+	Query.first({	
+	success: function(object) {
+     object.set("CirculatingSupply", suply);
+     object.save();
+	 console.log("Git");
+	 },
+  error: function(error) {
+    console.log("Error: "+error.message);
+  }
+});
+}
+
+//ALL();
+</script>
+	</body>
+</html>

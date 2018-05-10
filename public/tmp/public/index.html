@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WS</title>
+	
+</head>
+<body>
+	<form action="">
+		<input type="text" id='message'>
+		<input type="submit" id='message' value="Wyślij">
+	</form>
+	<div id="msgbox">
+		
+	</div>
+	<script>
+	var ws = new WebSocket('ws://165.227.228.223:3000');
+	ws.onmessage = function(msg) {
+		var msgBox = document.getElementById('msgbox');
+		var p = document.createElement('p');
+		p.innerText = msg.data;
+		msgBox.appendChild(p);
+	}
+	document.forms[0].onsubmit = function(ev) {
+		ev.preventDefault();
+		var input = document.getElementById('message');
+		ws.send(input.value);
+	} 
+	</script>
+</body>
+</html>

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<link rel="stylesheet" href="css/cryptocss.css" type="text/css"/>
+        <script type="text/javascript" src="js/parse.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
+		<script src="https://cdn.temasys.io/adapterjs/0.15.x/adapter.screenshare.min.js"></script>
+		<script src="https://cdn.temasys.com.sg/adapterjs/0.11.x/adapter.debug.js"></script>
+				<script src="js/jquery.easy-autocomplete.js"></script> 
+		<link rel="stylesheet" href="css/easy-autocomplete.css"> 
+		<script src="js/crypto.js"></script> 
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css"  />
+		
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+      <!--======= header =======-->
+      <header>
+        <div id="loader-wrapper"><div class="loader-logo"><img id="logoimg" src="img/logo.png" alt=""></div><div id="loader"></div></div>
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+					<a id="main-category-toggler" class="hidden-md hidden-lg hidden-md"  href="#">
+                    	<i class="fa fa-navicon"></i>
+                    </a>
+					<a id="main-category-toggler-close" class="hidden-md hidden-lg hidden-md" href="#">
+                    	<i class="fa fa-close"></i>
+                    </a>
+					 <div id="logo">
+                        <a href="01-home.html"><img id="logoimg" src="img/logo.png" alt=""></a>
+                    </div>
+                </div><!-- // col-md-2  -->
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs hidden-sm">
+                    <div class="search-form">
+                        <form id="search" action="#" method="post">
+                            <input type="text" id="SearchCrypto" placeholder="Search here cryptocurrency..."/>
+                            <input type="submit" value="Keywords" />
+                        </form>
+                    </div>
+                </div><!-- // col-md-3 -->
+                <div class="col-lg-3 col-md-3 col-sm-5 hidden-xs hidden-sm">
+                    <ul class="top-menu">
+ <li><a href="01-home.html" id="MyAllInvest"><i class="fa fa-btc"></i> 0.00000000 BTC / <i class="fa fa-dollar"></i>  0.00 USD</a></li>                             
+                    </ul>
+                </div><!-- // col-md-4 -->
+                <div class="col-lg-2 col-md-2 col-sm-4 hidden-xs hidden-sm">
+                    <ul class="notifications">                        
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-users"></i>
+                            <span class="badge badge-color1 header-badge" id="FriendsInvateCount">0</span>
+                        </a>
+                              <ul class="dropdown-menu dropdown-menu-friend-requests ">
+                                <div id="FriendsInvate">
+
+                          </div>
+                              </ul>
+                        </li>
+          <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="fa fa-bell-o"></i>
+                        	<span class="badge badge-color3 header-badge" id="NotificationsCount">0</span>
+                        </a>
+						<ul  class="dropdown-menu dropdown-notifications-items ">
+                          <div id="NotificationsPush">
+						  
+						  
+						  
+						  </div>
+                         <li><a href="#" class="all_notifications">All Notifications</a></li>   
+                        </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-sm">
+					  <div class="dropdown">
+                        <a data-toggle="dropdown" href="#" class="user-area">
+                            <div class="thumb"><img id="ProfilImage" src="demo_img/user-1.png" alt=""></div>
+                            <h2 id="Mail"></h2>
+<i class="fa fa-angle-down"></i>
+                        </a>
+						<ul class="dropdown-menu account-menu">
+                           <li><a  class="logout" href="#"><i class="fa fa-sign-out color-4"></i>sign out</a></li>
+                        </ul>
+    				</div>
+                </div>
+            </div><!-- // row -->
+        </div><!-- // container-full -->
+      </header><!-- // header -->
+
+      <div id="main-category">
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-md-12">
+                    <ul id="AllCryptoO" class="main-category-menu">                      
+                      
+					</ul>
+
+                </div><!-- // col-md-14 -->
+              </div><!-- // row -->
+          </div><!-- // container-full -->
+      </div><!-- // main-category -->
+
+	  <div class="site-output">
+
+      	<div class="col-md-2 no-padding-left hidden-sm hidden-xs">
+
+        	<div class="left-sidebar">
+            	<div id="no-sidebar-stick" >
+            	<ul class="menu-sidebar">
+					<li><a href="main.html"><i class="fa fa-home"></i>Dashboard</a></li>
+					<li><a href="cryptocurrency.html"><i class="fa fa-btc"></i>Cryptocurrency</a></li>
+					<li><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+                	<li><a href="signals.html"><i class="fa fa-bolt"></i>Signals</a></li>
+					</ul>
+					<ul class="menu-sidebar" id="AllGroups">
+					</ul>
+                </ul>
+				<ul class="menu-sidebar">
+                	<li><a href="editprofil.html"><i class="fa fa-edit"></i>edit profile</a></li>
+                	<li><a href="#"><i class="fa fa-sign-out"></i>sing out</a></li>
+                </ul>
+
+                </div><!-- // sidebar-stick -->
+                <div class="clear"></div>
+            </div><!-- // left-sidebar -->
+        </div><!-- // col-md-2 -->
+		
+		
+<div id="dolnyczat">
+
+</div>
+
+<div id="mySidenav" class="sidenav">
+<div id="sidepanel">
+        <div id="profile">
+            <div class="wrap">
+                <img id="profile-img" src="http://emilcarlsson.se/assets/mikeross.png" class="online" alt="" />
+                <p id="MyNickName"></p>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <div id="status-options">
+                    <ul>
+                        <li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
+                        <li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
+                        <li id="status-busy"><span class="status-circle"></span> <p>Busy</p></li>
+                        <li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+            <input type="text" placeholder="Search contacts..." />
+        </div>
+        <div id="contacts">
+            <ul id="MyAllFriends">
+
+          
+            </ul>
+        </div>
+        
+</div>
+</div>
+        <div id="all-output" class="col-md-12">
+
+		<div id="category-cover-image">
+            	<div class="image-in">
+                	<img src="demo_img/category-img.jpg" alt="">
+                </div>
+            	<h1 class="title"><i class="fa fa-users"></i> HAJSTYLE.PL</h1>
+                <ul class="category-info">
+                	<li class="subscribeB"><a href="#">Subscribers 87</a><li>
+                	<li class="subscribe"><a href="#">Subscribe (0.01BTC)</a></li>
+					                	<li class="subscribeA" ><a href="#">ROI 130%</a></li>
+                </ul>
+            </div>
+					<div id="history2">
+<div class="filter">
+<div class="row"><div class="col-md-8">
+                            <ul class="nav nav-tabs nav-justified indigo" id="myTab" role="tablist">	
+<li class="nav-item active"><a  class="nav-link active" data-toggle="tab" role="tab" href="#AllInfo"><i class="fa fa-send"></i> Forum</a></li>
+<li class="nav-item"><a  class="nav-link" data-toggle="tab" role="tab" href="#SignalsGrup"><i class="fa fa-bolt"></i> Signals</a></li>
+								
+                            </ul>
+                        </div><!-- // col-md-8 -->
+                        <div class="col-md-4">
+                            <div class="search-form">
+                                <form id="search_history" action="#" method="post">
+                                    <input type="text" placeholder="Search here posts..."/>
+                                    <input type="submit" value="Keywords" />
+                                </form>
+                            </div>
+                        </div><!-- // col-md-4 -->
+                    </div><!-- // row -->	
+		</div>
+		</div>
+		<div class="tab-content">
+            <div class="tab-pane active row" role="tabpanel" id="AllInfo">
+ 
+<!-- // col-md-4 -->
+
+ 
+				                <div class="col-md-2">
+                	<div id="related-posts" class="ChanelID">
+					
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#Announcements </a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#General </a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#News </a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#Bitcoin </a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#ICO </a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+                            <a href="#" class="title">#Researches</a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+                    	<!-- video item -->
+                        <div class="related-video-item">
+
+                            <a href="#" class="title">#Markets</a>
+                            <a class="channel-name" href="#">Rabie Elkheir<span>
+                            <i class="fa fa-check-circle"></i></span></a>
+                        </div>
+                    	<!-- // video item -->
+
+
+                    </div>
+                </div><!-- // col-md-4 -->
+                <div class="col-md-8">
+                	<div id="watch">
+
+                        <!-- Video Player -->
+                        
+
+                        
+                        <!-- // Comments -->
+
+
+                    </div><!-- // watch -->
+                </div><!-- // col-md-8 -->
+                <div class="col-md-2">
+                <div id="vChatRight">
+				<h3 class="widget-title" >vChat </h3>
+				
+				<div id="category">
+				    
+                    	<div id="vChanels" >
+
+	
+
+                    </div>
+                    </div>
+                    </div>
+				
+				
+				
+
+				<div id="category">
+                    	<div id="top-channels">
+                            	<div class="row searchBox">
+          <div class="col-sm-12 searchBox-inner">
+            <div class="form-group has-feedback">
+              <input id="searchText" type="text" class="form-control" name="searchText" placeholder="Search">
+			  
+            </div>
+          </div>
+	 </div>
+<ul class="channels" >
+        <div id="AllUsers" class="row sideBar">
+          
+
+                  
+                            
+                        </div>
+						</ul>
+                    </div>
+                    </div>
+                <!-- // Related Posts -->
+            </div><!-- // row -->
+		</div>
+            <div class="tab-pane row" id="SignalsGrup"></div>
+<div id="VideoVchat" class="AllVideoVchat">
+<video class="myVideo" id="myvideo" autoplay muted></video>
+<video id="myvideo2" class="videoUser" autoplay muted></video>
+    <i class="fa fa-arrows-alt FullScreenbutton" value="close" style="display: none"></i>
+            </div>
+
+
+
+
+      </div></div>		
+      <div id="dialogReminderChanel" title="Add Reminder">
+      <h4>SHOW IF</h4>
+	  <div class="funkyradio">
+        <div class="funkyradio-success">
+            <input type="checkbox" name="checkbox" id="checkboxAll" class="PlatformAll" />
+            <label for="checkboxAll">All Chanel Info</label>
+        </div>
+        <div class="funkyradio-danger">
+            <input type="checkbox" name="checkbox" id="checkboxAdmin"  class="PlatformAdmin"/>
+            <label for="checkboxAdmin">Only Admin Info</label>
+        </div>
+    </div>
+	  <div class="KindReminder">
+     <h4>Notifications</h4>
+
+    <div class="funkyradio">
+        <div class="funkyradio-success">
+            <input type="checkbox" name="checkbox" id="checkbox3" class="PlatformNote" />
+            <label for="checkbox3">Platform Notification</label>
+        </div>
+        <div class="funkyradio-danger">
+            <input type="checkbox" name="checkbox" id="checkbox4"  class="AlertNote"/>
+            <label for="checkbox4">Alert Notification</label>
+        </div>
+    </div>
+
+        <div class="funkyradio-success">
+            <input type="checkbox" name="checkbox" id="checkboxDel" class="NoteDelete" />
+            <label for="checkboxDel">Delete After Send</label>
+        </div>
+	  </div>
+</div>
+<script src="js/jquery.sticky-kit.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-blog.min.js"></script>
+<script>
+  // Example options.
+  var AdapterJS = {
+    options: {
+      forceSafariPlugin: [Boolean],
+      hidePluginInstallPrompt: [Boolean],
+      getAllCams: [Boolean]
+    }
+  };
+  
+</script>
+<! -- Now reference AdapterJS or SkylinkJS (complete version) -->
+<script src="https://cdn.temasys.io/skylink/skylinkjs/0.6.x/skylink.complete.js"></script>
+<script type="text/javascript">
+Parse.initialize("cryptonsignals", "sjkfbkbagrheilhjfgakebgafevdgkjaflsvdgkjav");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+var MyMenuCoins = [];
+var MyCoinsAlert = [];
+var MyCoinsMenu = [];
+var MyCoinsInvest = [];
+var GroupRoleName;
+var AllVChat = '';
+var AdminRole;
+var AllCoins = [];
+var key;
+var toSkip;   
+var AllBinanceData;
+var AllBittrexData;
+var AllImagesUser = [];     
+
+ $(window).load(function() {
+    setTimeout(
+        function() {
+            $("#loader-wrapper").fadeOut();
+        }, 3000);
+});
+
+
+   $(document).on('click', '#showFriends', function(){
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.display = "block";
+    $(this).attr("id", "closeFriends");
+    });
+
+    $(document).on('click', '#closeFriends', function(){
+    document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById("mySidenav").style.display = "none";
+    $(this).attr("id", "showFriends");
+    
+    });
+
+
+  
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
+
+var currentUser = Parse.User.current();
+		if (currentUser) {
+       console.log("jest użytkownik");
+var email = Parse.User.current().get("email");
+var Nick = Parse.User.current().get("NickName");
+$("#MyNickName").text(Nick);
+if(currentUser.get("IMGfile")){ var curl = currentUser.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+$("#profile-img").attr("src", curl) 
+$("#ProfilImage").attr("src", curl)            
+$("#Mail").text(email);	   
+} else {
+       location.href = 'index.html';
+}
+
+$(document).on('click', '.logout', function(){
+Parse.User.logOut();
+location.href = 'index.html';	
+});
+    
+    
+  $( function() {
+    dialog = $( "#dialogReminderChanel" ).dialog({
+      autoOpen: false,
+	  height: 400,
+      width: 300,
+      modal: true,
+      buttons: {
+	    "Send": AddNotificationsChanel, 
+	     Cancel: function() {
+		           dialog.dialog( "close" );
+        }, 
+      },
+    });
+
+	
+  } );	   
+    
+    
+
+var nextActive = true;
+function amountscrolled(){
+	var winheight = $(window).height()
+	var docheight = $(document).height()
+	var scrollTop = $(window).scrollTop()
+	var trackLength = docheight - winheight
+	var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+    if(pctScrolled >= 92) {if(nextActive){getMorePost();}}
+	console.log( 'You have scrolled the page by: ' + pctScrolled +'%' )
+}
+
+ 
+
+var AllTypesJSON = [];
+var AllTypesInfo = [];
+  function getTypes(){
+var AllTypes = [];
+  var Bittrex = Parse.Object.extend("Bittrex");
+  var Binance = Parse.Object.extend("Binance");
+    var Query_Binance = new Parse.Query(Binance);
+    Query_Binance.exists("Chart");
+	Query_Binance.limit(250);
+	Query_Binance.include("CryptoCurrency");
+    Query_Binance.find().then(function(BinanceCoins){
+	for(var i in BinanceCoins){
+    var Coin = BinanceCoins[i].get("Chart");
+	var CoinName = BinanceCoins[i].get("CoinName");
+	var Symbol = BinanceCoins[i].get("Symbol");
+	var Market = BinanceCoins[i].get("Market");
+	var exchange = "Binance";
+	var Pointer = BinanceCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	var ID = Pointer.id;
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	AllTypesInfo.push(Symbol+"/"+Market+":"+exchange);
+	AllTypesJSON.push({ALL: exchange+":"+Symbol+":"+Market+":"+CoinName+":"+ID, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+	var Query_Bittrex = new Parse.Query(Bittrex);
+	Query_Bittrex.exists("Chart");
+	Query_Bittrex.limit(250);
+	Query_Bittrex.include("CryptoCurrency");
+    Query_Bittrex.find().then(function(BittrexCoins){
+	for(var i in BittrexCoins){
+    var Coin = BittrexCoins[i].get("Chart");
+	var CoinName = BittrexCoins[i].get("CoinName");
+	var Symbol = BittrexCoins[i].get("Symbol");
+	var Market = BittrexCoins[i].get("Market");
+	var exchange = "Bittrex";
+	var Pointer = BittrexCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	var ID2 = Pointer.id;
+	console.log(ID);
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	AllTypesInfo.push(Symbol+"/"+Market+":"+exchange);
+	AllTypesJSON.push({ALL: exchange+":"+Symbol+":"+Market+":"+CoinName+":"+ID2, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+
+var options = {
+	data: AllTypesJSON,
+	list: {
+		maxNumberOfElements: 12,
+		match: {
+			enabled: true
+		},onClickEvent: function() {
+			let coin  = $("#SearchCrypto").getSelectedItemData().IMGfile;
+            let ALL  = $("#SearchCrypto").getSelectedItemData().ALL;
+            var alltosplit = ALL.split(':');
+            var link = "crypto.html#"+coin+"#"+alltosplit[0].toUpperCase()+":"+alltosplit[1]+alltosplit[2];
+            location.href = link;
+            
+
+		}
+	},
+	getValue: "ALL",
+	template: {
+		type: "custom",
+		method: function(value, item) {
+			return "<img class='imgsearch' src='coins/"+item.IMGfile+".png'><b>" + item.CoinNames + "</b> | " + item.Pair + " | " + item.Exchange;
+		}
+	}
+};
+
+var ALLTOP = $("#SearchCrypto").easyAutocomplete(options);	
+});
+});
+}
+
+
+
+var skylink;
+   $(document).on('click', '#VChat', function(){
+var rChat = '';      
+var Name = $(this).attr("Name");
+var id = $(this).attr("chanelId");
+//$('#StartVideo').attr('name', 'value');
+skylink = new Skylink();
+rChat += '<div class="vchatInfo bottomline"><span><i class="fa fa-whatsapp"></i> '+Name+'</span></div>';       
+rChat += '<div class="AllOptionVideo"><div class="backgroundradius StartVideo" id="StartVideo" style="background-color: #a9a9a9"><i class="fa fa-video-camera" style="font-size: 12px;"></i></div>';
+rChat += '<div class="backgroundradius StartVideoShare" id="StartVideoShare" style="background-color: #a9a9a9"><i class="fa fa-tv" style="font-size: 12px;"></i></div>';
+rChat += '<div class="backgroundradius muteMic" id="muteMic" style="background-color: #35a92e"><i class="fa fa-microphone" style="font-size: 12px;"></i></div>';
+rChat += '<div class="backgroundradius"><i class="fa fa-phone disconnect" id="disconnect"></i></div></div>';       
+rChat += '<div id="AllUserChat"></div>';
+ $("#vChanels").html(rChat);      
+ skylink.init("d83d0fb9-e8eb-4c94-902e-afaa77daf6f1", function (error, success) {
+   if (success) {
+ skylink.joinRoom(id, {
+       userData: Parse.User.current().get("NickName"),
+       audio: true,
+       video: false
+     });
+   }
+ });
+ 
+ skylink.on('peerJoined', function(peerId, peerInfo, isSelf) {
+  if(isSelf) return; // We already have a video element for our video and don't need to create a new one.
+  var vid = document.createElement('video');
+  vid.autoplay = true;
+  vid.muted = false; // Added to avoid feedback when testing locally
+  vid.id = peerId;
+  vid.setAttribute("style", "display: none");
+ // $("#ChatVoiceUsers").append('<div class="row sideBar-body"><div class="col-sm-9 col-xs-9 sideBar-main"><div class="row"><div class="col-sm-8 col-xs-8 sideBar-name"><span class="name-meta">'+peerId+'</span></div></div></div></div>');
+  document.body.appendChild(vid);
+});
+
+skylink.on('incomingStream', function(peerId, stream, isSelf) {
+  if(isSelf) return;
+  var vid = document.getElementById(peerId);
+  attachMediaStream(vid, stream);
+    console.log(peerId,stream);
+});
+
+
+
+
+skylink.on('peerLeft', function(peerId, peerInfo, isSelf) {
+  var vid = document.getElementById(peerId);
+ // document.body.removeChild(vid);
+});
+
+skylink.on('mediaAccessSuccess', function(stream) {
+  var vid = document.getElementById('myvideo');
+  attachMediaStream(vid, stream);
+}); 
+getRoomValue();
+    });
+
+	
+function getRoomValue(){ 
+var rekordy = '';
+var peers = skylink.getPeersInRoom();
+var streams = skylink.getPeersStream();
+
+for(var i in peers){
+var nick = peers[i].userData;
+var mediaVideo = peers[i].mediaStatus.videoMuted;
+var mediaAudio = peers[i].mediaStatus.audioMuted;
+var mediaScreen = peers[i].settings.video.screenshare;
+var Sid = streams[i].streamId;
+var SidStream = streams[i].stream;
+
+var ImgUser = getUserImgByCode(nick);
+
+
+
+if(mediaVideo == false){var mVideo = '<i class="fa fa-video-camera"></i>'}else{var mVideo = '';}
+if(mediaAudio == false){var mAudio = '<i class="fa fa-volume-up"></i>'}else{var mAudio = '';}
+if(mediaScreen == true){
+var Screen = '<i class="fa fa-tv"></i>';
+var mVideo = '';
+var mAudio = '';
+}else{var Screen = '';}
+rekordy += '<div class="row sideBar-body" value="'+Sid+'" id="GetVideoFromUser" stream="'+SidStream+'"><div class="col-sm-2 col-xs-2 sideBar-avatar"><div class="avatar-icon"><img src="'+ImgUser[0].IMG+'"></div></div>'
+    rekordy +='<div class="col-sm-9 col-xs-9 sideBar-main"><div class="row"><div class="col-sm-8 col-xs-8 sideBar-name"><span class="name-meta">'+nick+' '+mAudio+' '+mVideo+' '+Screen+'</span></div></div></div></div>';
+}
+
+$("#AllUserChat").html(rekordy); 
+setTimeout(getRoomValue, 3000);
+}
+
+
+   $(document).on('click', '#StartVideo', function(){
+    var  videoShare = $(".StartVideoShare").attr("id");
+if(videoShare == "StopVideoShare"){
+$(".StartVideoShare").attr("id", "StartVideo");
+$(".StartVideoShare").attr("style", "background-color: #a9a9a9;");
+   stopShareStreaming();
+}      
+skylink.sendStream({
+        audio: true,
+        video: true
+      }, function (error, success) {
+        if (error) return;
+        console.log("getUserMedia() Stream with video is now being sent to Peers");
+        attachMediaStream(document.getElementById("myvideo"), success);
+      });
+$(this).attr("id", "StopVideo");
+$(this).attr("style", "background-color: #35a92e;");
+});
+    
+   $(document).on('click', '#muteMic', function(){
+    var  mutemic = $(".muteMic").attr("id"); 
+    if(mutemic == "muteMic"){
+$(".muteMic").attr("id", "unmuteMic");
+$(".muteMic").attr("style", "background-color: #a9a9a9");         
+}    
+     skylink.muteStream({
+    audioMuted: true,
+    videoMuted: false
+  }); 
+});
+    
+       $(document).on('click', '#unmuteMic', function(){
+           var  mutemic = $(".muteMic").attr("id"); 
+    if(mutemic == "unmuteMic"){
+$(".muteMic").attr("id", "muteMic");
+$(".muteMic").attr("style", "background-color: #35a92e");        
+}    
+     skylink.muteStream({
+    audioMuted: false,
+    videoMuted: false
+  });     
+       });
+    
+    
+     function stopShareStreaming() {
+    skylink.stopScreen();
+  }
+    
+   $(document).on('click', '#disconnect', function(){
+    skylink.leaveRoom();
+$('#vChanels').html(AllVChat);          
+  });
+    
+       $(document).on('click', '#StopVideo', function(){
+      skylink.sendStream({
+        audio: true,
+        video: false
+      }, function (error, success) {
+        if (error) return;
+        console.log("getUserMedia() Stream with video is now being sent to Peers");
+        attachMediaStream(document.getElementById("myvideo"), success);
+      }); 
+    $(this).attr("id", "StartVideo");
+    $(this).attr("style", "background-color: #a9a9a9");  
+});
+
+   $(document).on('click', '#StartVideoShare', function(){
+var  videoCamera = $(".StartVideo").attr("id");
+if(videoCamera == "StopVideo"){
+$(".StartVideo").attr("id", "StartVideo");
+$(".StartVideo").attr("style", "background-color: #a9a9a9");      
+}       
+  skylink.shareScreen(true, function (error, success) {
+    if (error) return;
+    attachMediaStream(document.getElementById("myvideo"), success);
+  });
+ $(this).attr("id", "StopVideoShare");
+    $(this).attr("style", "background-color: #35a92e");  
+});
+    
+       $(document).on('click', '#StopVideoShare', function(){
+  skylink.shareScreen(false, function (error, success) {
+    if (error) return;
+    attachMediaStream(document.getElementById("myvideo"), success);
+  });
+    $(this).attr("id", "StartVideoShare");
+     $(this).attr("style", "background-color: #35a92e"); 
+});
+
+
+
+   $(document).on('click', '#GetVideoFromUser', function(){
+var vid = document.getElementById("myvideo2");
+var id = $(this).attr("value");
+var streams = skylink.getPeersStream();
+for(var i in streams){
+if(streams[i].streamId == id){
+attachMediaStream(vid, streams[i].stream); 
+$(".FullScreenbutton").attr("style", "");    
+}
+}      
+});
+    
+   $(document).on('click', '.FullScreenbutton', function(){
+       var value = $(".FullScreenbutton").attr("value");
+       if(value == "close"){
+       $("#VideoVchat").attr('class', 'fullscreenvideo');
+       $(".FullScreenbutton").attr("value", "open");
+       }else{
+           $("#VideoVchat").attr('class', 'AllVideoVchat');
+           $(".FullScreenbutton").attr("value", "close");           
+       }
+   });
+    
+    
+    function getUserImgByCode(code) {
+var json = JSON.parse(JSON.stringify(AllImagesUser));
+  return json.filter(
+    function(json) {
+      return json.aUser == code 
+    }
+  );
+}
+
+var id = location.hash.split('#');	
+key = id[1].toString();
+
+
+
+
+
+
+function getLikes(ID) {
+var UserArray = [];
+	var SignalsLikes = Parse.Object.extend("SignalsLikes");
+    var Query_SignalsLikes = new Parse.Query(SignalsLikes);
+	Query_SignalsLikes.equalTo("SignalsID", ID);
+	Query_SignalsLikes.include("_User");
+	Query_SignalsLikes.find({	
+	success: function(results) {
+	 for (var x in results){
+	 var user = results[x].get("User");
+     var UserLikes = user.id;	 
+	 UserArray.push(UserLikes);
+	 
+	 }
+	  console.log(UserArray.length);
+	 $("#CountLikes"+ID).text(UserArray.length);
+	 if(UserArray.indexOf(Parse.User.current().id) > -1){$("#FunctionLikes"+ID).html("<i style='color: blue;' class='fa fa-rocket'></i><button value='"+ID+"' class='unlikebutton' id='UnLikeFunction'>Rocket</button>");}else{$("#FunctionLikes"+ID).html("<i  class='fa fa-rocket'></i><button value='"+ID+"' class='likebutton'  id='LikeFunction'>Rocket</button>");}
+
+	 
+	 
+	 },
+  error: function(error) {
+    console.log("Error: "+error.message);
+  }
+});
+}
+
+
+
+
+var Admins = [];
+function getGroup() {
+var AllNotifications = [];     
+var rekordyGroup = '<h3 class="widget-title" >CHANELS </h3>';
+var rekordyUsers = '';
+var cUser = Parse.User.current();
+var relations = cUser.relation("NotificationsContent");
+	var queryN = relations.query();
+	queryN.find().then(function(results){
+    for(var n in results){    
+    AllNotifications.push(results[n].get("ContentID"));
+    }
+  var Groups = Parse.Object.extend("Groups");
+  var Forum = Parse.Object.extend("Forum");
+  var voiceChanel = Parse.Object.extend("VoiceChanel");
+  var ForumChanel = Parse.Object.extend("ForumChanel");
+    var Query_Group = new Parse.Query(Groups);
+    Query_Group.equalTo("Key", key);
+	Query_Group.equalTo("Users", cUser);
+	Query_Group.include("Users");
+    Query_Group.first().then(function(Group){
+	GroupRoleName = Group.get("RoleName");
+	AdminRole = Group.get("AdminRole");
+	var idGroup = Group.id;
+	var GroupsPermission = Parse.Object.extend("GroupsPermission");
+	var Query_GroupsPermission = new Parse.Query(GroupsPermission);
+	Query_GroupsPermission.include("UserPointer");
+	Query_GroupsPermission.equalTo("idGroup", idGroup);
+	Query_GroupsPermission.find().then(function(User){   
+	for (var u in User){
+	var Kind = User[u].get("KINDOFUSER");
+	var pointer = User[u].get("UserPointer");
+        if(Kind == "Admin"){ Admins.push(pointer.id);}
+	var Nick = pointer.get("NickName");
+	if(pointer.get("IMGfile")){ var curl = pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}    
+AllImagesUser.push({aUser: Nick, IMG: curl});
+		rekordyUsers += '<div class="row sideBar-body"><div class="col-sm-2 col-xs-2 sideBar-avatar"><div class="avatar-icon">';
+rekordyUsers += '<img src="'+curl+'"></div></div>'; 
+rekordyUsers += '<div class="col-sm-10 col-xs-10 sideBar-main">'; 
+rekordyUsers += '<div class="row"><div class="naszalista sideBar-name">'; 
+rekordyUsers += '<span class="name-meta">'+Nick+'</span><div class="rolaipunkty">'+Kind+' <span>8144 PKT</span></div>'; 		
+rekordyUsers += '</div></div></div></div></div>'; 		
+
+	}
+    var UserId = Parse.User.current().id;
+    console.log(UserId, Admins);
+    if(Admins.indexOf(UserId) > -1){$("#myTab").append('<li class="nav-item"><a href="admingroup.html#'+idGroup+'#'+UserId+'#'+AdminRole+'"><i class="fa fa-cogs"></i> Admin Panel</a></li>');}    
+	$( "#AllUsers" ).html( rekordyUsers );
+	var Query_Forum = new Parse.Query(Forum);
+	Query_Forum.equalTo("PointerGroup",Group);
+	Query_Forum.find().then(function(Forum){
+	for (var i in Forum){
+	var Forumid = Forum[i].id;
+    if(AllNotifications.indexOf(Forumid) > -1) {var add = 'style="color: #6987f5;" active="false"'}else{var add = 'active="true"';}
+	var Topic = Forum[i].get("Topic");
+	var Author = Forum[i].get("Author");
+	 rekordyGroup += '<div class="related-video-item">';
+     rekordyGroup += '<a style="cursor:pointer" id="ChanelGetAll"  value="'+Forumid+'" value2="'+Topic+'" class="title">#'+Topic+' </a><div classname="ForumChanel" '+add+' forumid="'+Forumid+'" id="dzwoneczek" class="SetReminderChanel"><i class="fa fa-bell-o"></i></div>';
+     rekordyGroup += '<a id="channel-date-last'+Forumid+'" href="#">';
+     rekordyGroup += '</a></div>';	
+	GetLast(Forumid);	 
+	}	
+	$( ".ChanelID" ).html( rekordyGroup );
+	GetChanel(Forum[0].id, Forum[0].get("Topic"));
+	$("#TittleC").text(Forum[0].get("Topic"));
+	$("#TittleC").attr("value", Forum[0].id);    
+    var Query_Vchat = new Parse.Query(voiceChanel);
+	Query_Vchat.equalTo("GroupPointer",Group);
+	Query_Vchat.find().then(function(vChat){
+    for (var i in vChat){    
+    var Name = vChat[i].get("ChanelName");
+        var cId = vChat[i].id;
+        
+    AllVChat += '<li class="vchatchanel"><a data-toggle="tab" name="'+Name+'" id="VChat" chanelId="'+cId+'" href=""><i class="fa fa-whatsapp"></i>  '+Name+'</a></li>';
+    }
+    $('#vChanels').html(AllVChat);    
+    });    
+	});
+	});
+	});});
+console.log(AllImagesUser);    
+    
+}
+    
+
+function GetLast(idChanelDate){
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var Query_ForumChanel = new Parse.Query(ForumChanel);
+Query_ForumChanel.equalTo("ChanelId", idChanelDate);
+Query_ForumChanel.descending("Date");
+Query_ForumChanel.limit(1);
+Query_ForumChanel.first().then(function(Chanel){
+$(document).ready(function(){
+var date = Chanel.get("Date");
+date = date.toISOString();
+var Datesplit = date.split("T");
+var Time = Datesplit[1].split(":");
+$("#channel-date-last"+idChanelDate).html('<div class="datechanel"><i class="fa fa-calendar"></i> '+Datesplit[0]+' <i class="fa fa-clock-o"></i> '+Time[0]+':'+Time[1]+'</span></div>');
+	});	});
+}
+
+    
+ var forumidNotifications;
+ var classnameNotifications;
+ $(document).on('click', '.SetReminderChanel', function(){
+     var Active = $(this).attr("active");
+     if(Active == "true"){
+     $( "#dialogReminderChanel" ).dialog( "open" );
+     forumidNotifications = $(this).attr("forumid");
+     classnameNotifications = $(this).attr("classname");
+     }else{console.log("Ustalony")}
+    
+  });  
+
+   function AddNotificationsChanel(){
+  var Kinds = [];
+  var Cases = [];
+  var cUser = Parse.User.current();
+  var PlatformAll = $('.PlatformAll').is(':checked');
+  if(PlatformAll == true){Cases.push("ex:All");}
+  var PlatformAdmin = $('.PlatformAdmin').is(':checked');
+  if(PlatformAdmin == true){Cases.push("e:Admin:true");}
+       
+  var PlatformNote = $('.PlatformNote').is(':checked');
+  if(PlatformNote == true){Kinds.push("Platform");}
+  var PlatformAlert = $('.AlertNote').is(':checked');
+  if(PlatformAlert == true){Kinds.push("Alert");}
+  var NoteDelete = $('.NoteDelete').is(':checked');
+var MyNotificationsContent = Parse.Object.extend("MyNotificationsContent");       
+MyNotificationsContent  = new MyNotificationsContent();
+MyNotificationsContent.set("ContentID", forumidNotifications);
+MyNotificationsContent.set("ContentClass", classnameNotifications);
+MyNotificationsContent.set("KindNotifications", Kinds);
+MyNotificationsContent.set("Cases", Cases);
+MyNotificationsContent.set("UserId", cUser);
+MyNotificationsContent.set("ChanelP", "ChanelPointer");       
+MyNotificationsContent.set("UserP", "User");
+MyNotificationsContent.set("Delete", NoteDelete);    
+MyNotificationsContent.save().then(function(obj) {
+var user = Parse.User.current();
+var relation = user.relation("NotificationsContent");
+relation.add(obj);
+user.save().then(function(obj2) {
+    $( "#dialogReminderChanel" ).dialog( "close" );
+    $('.PlatformAll').removeAttr('checked');
+    $('.PlatformAdmin').removeAttr('checked');
+    $('.PlatformNote').removeAttr('checked');
+    $('.AlertNote').removeAttr('checked');
+    $('.NoteDelete').removeAttr('checked');
+ });
+
+});       
+   } 
+    
+    
+    
+$(document).on('click', '#ChanelGetAll', function(){
+var id = $(this).attr('value');
+var Name = $(this).attr('value2');
+$("#TittleC").text(Name);
+$("#TittleC").attr("value", id);
+$( "#comments" ).html('');
+GetChanel(id, Name);
+});
+
+
+                            
+                 
+   $(document).on('click', '#post_submit', function(){
+var CoinTicker = [];      
+var cUser = Parse.User.current();
+var date = new Date(); 
+var postACL = new Parse.ACL(); 
+postACL.setRoleReadAccess(GroupRoleName, true);
+postACL.setWriteAccess(Parse.User.current().id, true);
+postACL.setRoleReadAccess(AdminRole, true);
+postACL.setWriteAccess(AdminRole, true);
+if(Admins.indexOf(Parse.User.current().id) > -1){var user = true;}else{var user = false;}
+var markupStr = $('#summernote').summernote('code').replace(/@(.*)\/(.*):(.*)@(.*)/ ,function($1,$2,$3,$4, $5){
+           var S4 = $4.split("@");
+    
+           var tochange = S4[0]+"-"+$2+"-"+$3;
+           CoinTicker.push(tochange);
+           return('<div class="krypto4"><span class="AllC'+S4[0]+'-'+$2+'-'+$3+'"></span><b class="priceC'+S4[0]+'-'+$2+'-'+$3+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:10px"></i></b></div>'+$5);  
+            });
+console.log(CoinTicker);       
+var ChanelName = $('#TittleC').text();
+var idchanel = $('#TittleC').attr("value");
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var Forum = Parse.Object.extend("Forum");
+var ForumChanel = new ForumChanel();
+ForumChanel.set("User", cUser);
+ForumChanel.set("Content", markupStr);
+ForumChanel.set("Date", date);
+ForumChanel.set("Ticker", CoinTicker);       
+ForumChanel.set("Admin", user);       
+ForumChanel.set("ChanelPointer", Forum.createWithoutData(idchanel));
+ForumChanel.set("ChanelId", idchanel);
+ForumChanel.set("ChanelName", ChanelName);
+ForumChanel.setACL(postACL);
+ForumChanel.save().then(function(obj) {
+
+$('#summernote').summernote('code', '');
+}, function(error) {
+  // the save failed.
+});
+});
+                           
+ 
+
+                            	
+
+
+function  GetChanel(idChanel, Name){    
+toSkip = 0;    
+$( "#TittleC" ).text("#"+Name);
+$("#TittleC").attr("value", idChanel);
+var rekordyChanel = '';
+var UsrId = Parse.User.current().id;
+rekordyChanel += '<div id="comments" class="post-comments"><h3 class="widget-title" value="'+idChanel+'" value2="'+Name+'" id="TittleC">'+Name+' </h3><div id="accordion"><form><div id="summernote"></div><button type="button"  id="post_submit" class="btn btn-dm">Add Post</button></form></div></div><div id="AllChanel'+idChanel+'">';	
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var Query_ForumChanel = new Parse.Query(ForumChanel);
+Query_ForumChanel.equalTo("ChanelId", idChanel);
+Query_ForumChanel.descending("Date");
+Query_ForumChanel.include("User");
+Query_ForumChanel.limit(10);
+Query_ForumChanel.find().then(function(Chanel){
+console.log(Chanel);
+for (var i in Chanel){
+var rekordyOption = "";
+var Topic = Chanel[i].get("Topic");
+var idChanelForum = Chanel[i].id;
+var Date = Chanel[i].get("Date");
+Date = Date.toISOString();
+var Datesplit = Date.split("T");
+var Time = Datesplit[1].split(":");
+var Content = Chanel[i].get("Content");
+var Pointer = Chanel[i].get("User");
+var UserPointerId = Pointer.id;
+if(UsrId == UserPointerId){ rekordyOption += '<li value="'+Chanel[i].id+'" class="removeChanel ChanelOptionPost"><a> Remove</a></li>';}
+rekordyOption += '<li value="'+Chanel[i].id+'" class="reportPost ChanelOptionPost"><a> Report</a></li>';    
+var NickName = Pointer.get("NickName");
+console.log(NickName);
+if(Pointer.get("IMGfile")){ var curl = Pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+	       rekordyChanel += '<div id="comments" class="post-comments'+idChanelForum+'"><ul class="comments-list"><li><div class="post_author"><div class="img_in">';
+           rekordyChanel += '<a href="#"><img  class="ImgStyle" src="'+curl+'" alt=""></a></div>';
+           rekordyChanel += '<a href="#" class="author-name">'+NickName+'</a>';
+           rekordyChanel += '<div class="container-fluid alignright1"><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">';
+           rekordyChanel += '<ul class="nav navbar-nav"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-bars"></i></a>';
+    rekordyChanel += '<ul class="dropdown-menu">';
+    rekordyChanel += rekordyOption;
+    rekordyChanel += '</ul></li></ul></div></div>';
+           rekordyChanel += '<time datetime="'+Date+'"><i class="fa fa-calendar"></i>   '+Datesplit[0]+'   <i class="fa fa-clock-o"></i>  '+Time[0]+':'+Time[1]+'</time></div>';
+           rekordyChanel += '<p>'+Content+'</p>';
+		   rekordyChanel += '<ul class="children"></ul></ul><ul class="DetailsPost"><li><a title="" data-toggle="tooltip" class="ShowComment" value="'+idChanelForum+'" data-placement="bottom" data-original-title="Video"><i class="comPost fa-comments"></i>Comments</a></li></ul><div class="AllComents" id="AllComents'+idChanelForum+'" ></div></div>';			
+	}
+	rekordyChanel += '<button value="'+idChanel+'" value2="'+Name+'" id="ShowMore">Show more</button>';
+	rekordyChanel += '</div>';
+	GetSubscribeChanel(idChanel);
+	
+	$( "#watch" ).html( rekordyChanel );
+    $(window).on("scroll", function(){
+	amountscrolled();
+})    
+   
+});
+}
+
+$(document).on('click', '#ShowMore', function(){
+ getMorePost();   
+});
+
+ 
+function getMorePost(){
+nextActive = false;    
+toSkip = toSkip+10;
+var idChanel = $('#TittleC').attr('value');
+var Name = $('#TittleC').attr('value2');
+    console.log(idChanel, Name);
+    $(document).ready(function(){
+$("#ShowMore").remove();
+    });
+$( "#TittleC" ).text("#"+Name);
+$("#TittleC").attr("value", idChanel);
+var rekordyChanel = '';
+var UsrId = Parse.User.current().id;
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var Query_ForumChanel = new Parse.Query(ForumChanel);
+Query_ForumChanel.equalTo("ChanelId", idChanel);
+Query_ForumChanel.descending("Date");
+Query_ForumChanel.include("User");
+Query_ForumChanel.limit(10);
+Query_ForumChanel.skip(toSkip);
+Query_ForumChanel.find().then(function(Chanel){
+if(Chanel.length > 0){
+for (var i in Chanel){
+var rekordyOption = "";
+var Topic = Chanel[i].get("Topic");
+var idChanelForum = Chanel[i].id;
+var Date = Chanel[i].get("Date");
+Date = Date.toISOString();
+var Datesplit = Date.split("T");
+var Time = Datesplit[1].split(":");    
+var Content = Chanel[i].get("Content");
+var Pointer = Chanel[i].get("User");
+var UserPointerId = Pointer.id;
+if(UsrId == UserPointerId){ rekordyOption += '<li value="'+Chanel[i].id+'" class="removeChanel ChanelOptionPost"><a> Remove</a></li>';}
+rekordyOption += '<li value="'+Chanel[i].id+'" class="reportPost ChanelOptionPost"><a> Report</a></li>';    
+var NickName = Pointer.get("NickName");
+console.log(NickName);
+if(Pointer.get("IMGfile")){ var curl = Pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+	       rekordyChanel += '<div id="comments" class="post-comments'+idChanelForum+'"><ul class="comments-list"><li><div class="post_author"><div class="img_in">';
+           rekordyChanel += '<a href="#"><img  class="ImgStyle" src="'+curl+'" alt=""></a></div>';
+           rekordyChanel += '<a href="#" class="author-name">'+NickName+'</a>';
+           rekordyChanel += '<div class="container-fluid alignright1"><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">';
+           rekordyChanel += '<ul class="nav navbar-nav"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-bars"></i></a>';
+           rekordyChanel += '<ul class="dropdown-menu">';
+           rekordyChanel += rekordyOption;
+           rekordyChanel += '</ul></li></ul></div></div>';
+           rekordyChanel += '<time datetime="'+Date+'"><i class="fa fa-calendar"></i>   '+Datesplit[0]+'   <i class="fa fa-clock-o"></i>  '+Time[0]+':'+Time[1]+'</time></div>';
+           rekordyChanel += '<p>'+Content+'</p>';
+		   rekordyChanel += '<ul class="children"></ul></ul><ul class="DetailsPost"><li><a title="" data-toggle="tooltip" class="ShowComment" value="'+idChanelForum+'" data-placement="bottom" data-original-title="Video"><i class="comPost fa-comments"></i>Comments</a></li></ul><div class="AllComents" id="AllComents'+idChanelForum+'" ></div></div>';			
+	}
+	rekordyChanel += '<button id="ShowMore">Show more</button>';
+	rekordyChanel += '</div>';
+	GetSubscribeChanel(idChanel);
+}else{rekordyChanel += '<h3>No more posts</h3>'; toSkip = toSkip-10;}
+	$( "#watch" ).append( rekordyChanel );
+    nextActive = true;  
+});
+}
+
+    
+    
+    
+    
+$(document).on('click', '.removeChanel', function(){
+var idCom = $(this).attr('value');
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var ForumChanel = new Parse.Query(ForumChanel);
+ForumChanel.get(idCom, {
+       success: function(yourObj) {
+       yourObj.destroy({});
+  },
+  error: function(object, error) {
+  console.log("coś poszło nie tak");
+   
+  }
+});  
+});
+//aaaaaaaaaaaaa
+var GeterChanel = [];
+function GetSubscribeChanel(id){
+let queryF = new Parse.Query("ForumChanel");
+queryF.equalTo("ChanelId", id);
+queryF.include("User");
+let subscription = queryF.subscribe();
+    
+    
+subscription.on('open', () => {
+ console.log('subscription opened');
+});
+subscription.on('create', (object) => {
+var rekordyOption = "";
+var rekordyAdd = '';
+var Content = object.get("Content");
+var idChanelForum = object.id;
+var Date = object.get("Date");
+Date = Date.toISOString();
+var Datesplit = Date.split("T");
+var Time = Datesplit[1].split(":");     
+var Pointer = object.get("User");
+var UserPointerId = Pointer.id;
+if(Parse.User.current().id == UserPointerId){ rekordyOption += '<li value="'+idChanelForum+'" class="removeChanel ChanelOptionPost"><a> Remove</a></li>';}
+rekordyOption += '<li value="'+idChanelForum+'" class="reportPost ChanelOptionPost"><a> Report</a></li>';        
+var NickName = Pointer.get("NickName");
+if(Pointer.get("IMGfile")){ var curl = Pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+		
+rekordyAdd  += '<div id="comments" value="'+idChanelForum+'" class="post-comments'+idChanelForum+'"><ul class="comments-list"><li><div class="post_author"><div class="img_in">';
+rekordyAdd  += '<a href="#"><img src="'+curl+'" class="ImgStyle" alt=""></a></div>';
+rekordyAdd  += '<a href="#" class="author-name">'+NickName+'</a>';
+rekordyAdd += '<div class="container-fluid alignright1"><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">';
+rekordyAdd += '<ul class="nav navbar-nav"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-bars"></i></a>';
+rekordyAdd += '<ul class="dropdown-menu">';
+rekordyAdd += rekordyOption;
+rekordyAdd += '</ul></li></ul></div></div>';
+rekordyAdd  += '<time datetime="'+Date+'"><i class="fa fa-calendar"></i>   '+Datesplit[0]+'   <i class="fa fa-clock-o"></i>  '+Time[0]+':'+Time[1]+'</time></div>';
+rekordyAdd  += '<p>'+Content+'</p>';
+rekordyAdd  += '<ul class="children"></ul></ul><ul class="DetailsPost"><li><a title="" data-toggle="tooltip" class="ShowComment" value="'+idChanelForum+'" data-placement="bottom" data-original-title="Video"><i class="comPost fa-comments"></i>Comments</a></li></ul><div class="AllComents" id="AllComents'+idChanelForum+'" ></div></div>';					
+
+$(document).ready(function(){
+if(GeterChanel.indexOf(idChanelForum) > -1){}else{				
+$("#AllChanel"+id).prepend(rekordyAdd);
+GeterChanel.push(idChanelForum);
+}
+		}); 
+			
+}); 
+
+subscription.on('delete', (object) => {
+
+$( ".post-comments"+object.id ).remove();
+});                    
+}
+
+getGroup();
+
+setInterval(function(){ 
+$(document).ready(function(){
+$('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 150,
+		toolbar: [
+    // [groupName, [list of button]]
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['video'],
+	['link'],
+	['table']
+  ],
+  hint: {
+    mentions: AllTypesInfo,
+    match: /\B@(\w*)$/,
+    search: function (keyword, callback) {
+      callback($.grep(this.mentions, function (item) {
+        return item.indexOf(keyword.toUpperCase()) == 0;
+      }));
+    },
+    content: function (item) {
+      return '@'+item+'@';
+    },
+
+  }
+
+      });
+ }, 1000); });	
+
+
+
+
+ 
+
+$(document).on('click', '.ShowComment', function(){
+var idChanelCom = $(this).attr('value');
+var cUser = Parse.User.current();
+var urlU  = cUser.get("IMGurl"); 
+var usrId = Parse.User.current().id;
+console.log(idChanelCom);
+var rekordyChanelCom = '';
+var ForumChanelComments = Parse.Object.extend("ForumChanelComments");
+var Query_ForumChanelComments = new Parse.Query(ForumChanelComments);
+Query_ForumChanelComments.equalTo("ChanelId", idChanelCom);
+Query_ForumChanelComments.ascending("Date");
+Query_ForumChanelComments.include("User");
+Query_ForumChanelComments.find().then(function(ChanelCom){
+var count = ChanelCom.length;
+rekordyChanelCom +=	'<H3 class="borderup"> Comments</H3>';
+rekordyChanelCom += '<ul id="FirstComments'+idChanelCom+'" class="comments-lists"><li>';
+if(ChanelCom.length == 0){
+console.log("yes");
+
+}else{
+
+for (var i in ChanelCom){
+var removeChanelC = '';
+var Getid = ChanelCom[i].id;
+var SecondCom = getSecondCom(Getid);
+var Content = ChanelCom[i].get("Content");
+var Date = ChanelCom[i].get("Date");
+Date = Date.toISOString();
+var Datesplit = Date.split("T");
+var Time = Datesplit[1].split(":");    
+var Pointer = ChanelCom[i].get("UserPointer");
+var UserPointerId = Pointer.id;
+if(usrId == UserPointerId){ removeChanelC = "<i value='"+Getid+"' class='fa fa-times removeComment'></i>";}
+var NickName = Pointer.get("NickName");
+if(Pointer.get("IMGfile")){ var curl = Pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+
+rekordyChanelCom +=	'<div id="zamknietekomenty"><ul id="comments-list" class="comments-lists'+Getid+'"><li><div class="comment-main-level">';
+rekordyChanelCom +=	'<div class="comment-avatar"><img src="'+curl+'" alt=""></div>';
+rekordyChanelCom +=	'<div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="http://creaticode.com/blog">'+NickName+'</a></h6>';
+rekordyChanelCom +=	'<span>'+Datesplit[0]+' '+Time[0]+':'+Time[1]+'</span>'+removeChanelC+'<i class="fa fa-heart"></i></div>';
+rekordyChanelCom +=	'<div class="comment-content">'+Content+'</div>';
+rekordyChanelCom +=	'</div></div></li><div class="SecondCom" id="SecondCom'+Getid+'"></div></ul></div>';
+
+}
+}
+rekordyChanelCom +=	'</li></ul>';
+rekordyChanelCom += '<ul id="com" class="comments-lists"><li><div class="comment-avatar"><img src="'+urlU+'" alt=""></div><div class="comment-box"><div id="summernote'+idChanelCom+'"></div></div><button id="AddComment" value="'+idChanelCom+'" class="btn btn-dm">Add Comments</button></li></ul>';
+$("#AllComents"+idChanelCom).html(rekordyChanelCom);
+if(count > 0){
+$("#AllComents"+idChanelCom).css({"height":"450px", "overflow": "auto","width":"100%"});
+}else{}
+setInterval(function(){ 
+$(document).ready(function(){
+$('#summernote'+idChanelCom).summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 65,
+		toolbar: [
+
+  ]
+      });
+ }, 2000); });	
+GetSubscribeComment(idChanelCom);
+});
+});
+
+
+$(document).on('click', '.removeComment', function(){
+var idCom = $(this).attr('value');
+var ForumChanelComments = Parse.Object.extend("ForumChanelComments");
+var ForumChanelComments = new Parse.Query(ForumChanelComments);
+ForumChanelComments.get(idCom, {
+       success: function(yourObj) {
+       yourObj.destroy({});
+  },
+  error: function(object, error) {
+  console.log("coś poszło nie tak");
+   
+  }
+});  
+});
+
+var GeterChanelCom = [];
+function GetSubscribeComment(id){
+let queryFC = new Parse.Query("ForumChanelComments");
+queryFC.equalTo("ChanelId", id);
+queryFC.include("User");
+let subscription = queryFC.subscribe();
+subscription.on('open', () => {
+ console.log('subscription opened');
+ GeterChanelCom = [];
+});
+
+subscription.on('create', (object) => {
+rekordyAddC = '';
+var usrId = Parse.User.current().id;
+var removeChanelC = '';
+var Getid = object.id;
+var SecondCom = getSecondCom(Getid);
+var Content = object.get("Content");
+var Date = object.get("Date");
+    Date = Date.toISOString();
+var Datesplit = Date.split("T");
+var Time = Datesplit[1].split(":"); 
+var Pointer = object.get("UserPointer");
+var UserPointerId = Pointer.id;
+if(usrId == UserPointerId){ removeChanelC = "<i value='"+Getid+"' class='fa fa-times removeComment'></i>";}
+var NickName = Pointer.get("NickName");
+if(Pointer.get("IMGfile")){ var curl = Pointer.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+
+rekordyAddC  += '<ul id="comments-list" class="comments-lists'+Getid+'"><li><div class="comment-main-level">';
+rekordyAddC  += '<div class="comment-avatar"><img src="'+curl+'" alt=""></div>';
+rekordyAddC  += '<div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="http://creaticode.com/blog">'+NickName+'</a></h6>';
+rekordyAddC  += '<span>'+Datesplit[0]+' '+Time[0]+':'+Time[1]+'</span>'+removeChanelC+'<i class="fa fa-heart"></i></div>';
+rekordyAddC  += '<div class="comment-content">'+Content+'</div>';
+rekordyAddC  += '</div></div></li><div class="SecondCom" id="SecondCom'+Getid+'"></div></ul>';	
+
+$(document).ready(function(){
+if(GeterChanelCom.indexOf(Getid) > -1){}else{					
+$("#FirstComments"+id).append(rekordyAddC);
+GeterChanelCom.push(Getid);
+		}}); 	
+});
+
+subscription.on('delete', (object) => {
+$( ".comments-lists"+object.id ).remove();
+});                      
+} 
+
+
+
+   $(document).on('click', '#AddComment', function(){
+var idChanelComm = $(this).attr('value');
+var cUser = Parse.User.current();
+var date = new Date();
+var commentACL = new Parse.ACL(); 
+commentACL.setRoleReadAccess(GroupRoleName, true);
+commentACL.setWriteAccess(Parse.User.current().id, true);
+commentACL.setRoleReadAccess(AdminRole, true);
+commentACL.setWriteAccess(AdminRole, true);   
+var markupStr = $('#summernote'+idChanelComm).summernote('code');
+var ForumChanelComments = Parse.Object.extend("ForumChanelComments");
+var ForumChanel = Parse.Object.extend("ForumChanel");
+var ForumChanelComments = new ForumChanelComments();
+ForumChanelComments.set("UserPointer", cUser);
+ForumChanelComments.set("Content", markupStr);
+ForumChanelComments.set("Date", date);
+ForumChanelComments.set("PointerChanel", ForumChanel.createWithoutData(idChanelComm));
+ForumChanelComments.set("ChanelId", idChanelComm);
+ForumChanelComments.setACL(commentACL);
+ForumChanelComments.save().then(function(obj) {
+$('#summernote'+idChanelComm).summernote('insertText', '');
+}, function(error) {
+  // the save failed.
+});
+});
+
+
+
+
+function getSecondCom(id){
+var usrId = Parse.User.current().id;
+var ForumChanelComments2 = Parse.Object.extend("ForumChanelComments2");
+var Query_ForumChanelComments2 = new Parse.Query(ForumChanelComments2);
+Query_ForumChanelComments2.equalTo("idCom",id);
+Query_ForumChanelComments2.find().then(function(Com2){
+if(Com2.lenght == 0){}else{
+	var rekordyChanelCom2 = '<ul id="AllCom2'+id+'" class="comments-list reply-list">';
+	for (var f in Com2){
+	var removeChanelSC = "";
+	var ContentCom2 = Com2[f].get("Content");
+	var DateCom2 = Com2[f].get("Date");
+         DateCom2 = DateCom2.toISOString();
+        var Datesplit = DateCom2.split("T");
+        var Time = Datesplit[1].split(":");    
+	var PointerCom2 = Com2[f].get("UserPointer");
+	var UserPointerId = PointerCom2.id;
+	//if(usrId == UserPointerId){ removeChanelSC = "<i value='"+Com2[f].id+"' class='fa fa-times removeCommentSc'></i>";}
+	var NickNameCom2 = PointerCom2.get("NickName");
+	if(PointerCom2.get("IMGfile")){ var curl = PointerCom2.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+
+	rekordyChanelCom2  += '<li class="SecondComs" id="scom2"><div class="comment-avatar"><img src="'+curl+'" alt=""></div>';
+	rekordyChanelCom2  += '<div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="http://creaticode.com/blog">'+NickNameCom2+'</a></h6>'+removeChanelSC;
+	rekordyChanelCom2  += '<span>'+Datesplit[0]+' '+Time[0]+':'+Time[1]+'</span></div>';
+	rekordyChanelCom2  += '<div class="comment-content">'+ContentCom2+'</div></div></li>';
+	
+	}
+rekordyChanelCom2 += '</ul>';
+rekordyChanelCom2 += '<ul id="comsecond'+id+'" class="comments-list reply-list"><button value="'+id+'" class="responseCom btn btn-dm">Response</button></ul>';	
+	}
+$(document).ready(function(){	
+$("#SecondCom"+id).html(rekordyChanelCom2);
+});
+GetSubscribeSecondComment(id);
+	
+});
+}
+
+$(document).on('click', '.responseCom', function(){
+var idCom = $(this).attr('value');
+var cUser = Parse.User.current();
+if(cUser.get("IMGfile")){ var curl = cUser.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}   
+$("#comsecond"+idCom).html('<li class="SecondComs"><div class="comment-avatar"><img src="'+curl+'" alt=""></div><div class="comment-box"><div id="summernote'+idCom+'"></div></div><button id="AddSecondComment" value="'+idCom+'" class="btn btn-dm">Add Comments</button></li>');
+
+setInterval(function(){ 
+$(document).ready(function(){
+$('#summernote'+idCom).summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 65,
+		toolbar: [
+
+  ]
+      });
+ }, 2000); }); 
+});
+
+
+   $(document).on('click', '#AddSecondComment', function(){
+var idChanelSCom = $(this).attr('value');
+var cUser = Parse.User.current();
+var ScommentACL = new Parse.ACL(); 
+ScommentACL.setRoleReadAccess(GroupRoleName, true);
+ScommentACL.setWriteAccess(Parse.User.current().id, true);
+ScommentACL.setRoleReadAccess(AdminRole, true);
+ScommentACL.setWriteAccess(AdminRole, true);      
+var date = new Date();   
+var markupStr = $('#summernote'+idChanelSCom).summernote('code');
+var ForumChanelComments2 = Parse.Object.extend("ForumChanelComments2");
+var ForumChanelSC = Parse.Object.extend("ForumChanelComments");
+var ForumChanelComments2 = new ForumChanelComments2();
+ForumChanelComments2.set("UserPointer", cUser);
+ForumChanelComments2.set("Content", markupStr);
+ForumChanelComments2.set("Date", date);
+ForumChanelComments2.set("Com1Pointer", ForumChanelSC.createWithoutData(idChanelSCom));
+ForumChanelComments2.set("idCom", idChanelSCom);
+ForumChanelComments2.setACL(ScommentACL);
+ForumChanelComments2.save().then(function(obj) {
+//GetChanel(idchanel, ChanelName);
+}, function(error) {
+  // the save failed.
+});
+});
+
+var GeterChanelCom2 = [];
+function GetSubscribeSecondComment(idc){
+var cUser = Parse.User.current();
+let queryFSC = new Parse.Query("ForumChanelComments2");
+queryFSC.equalTo("idCom", idc);
+queryFSC.include("User");
+let subscriptionX = queryFSC.subscribe();
+subscriptionX.on('open', () => {
+ console.log('subscription opened');
+});
+
+subscriptionX.on('create', (object) => {
+var rekordyAddSC = '';
+	var ContentCom2 = object.get("Content");
+	var getid = object.id;
+	var DateCom2 = object.get("Date");
+	var PointerCom2 = object.get("UserPointer");
+	var NickNameCom2 = PointerCom2.get("NickName");
+	if(PointerCom2.get("IMGfile")){ var curl = PointerCom2.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+
+rekordyAddSC  += '<li class="SecondComs" ><div class="comment-avatar"><img src="'+curl+'" alt=""></div>';
+rekordyAddSC  += '<div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="http://creaticode.com/blog">'+NickNameCom2+'</a></h6>';
+rekordyAddSC  += '<span>July 27, 2014 - 11:00 PM</span></div>';
+rekordyAddSC  += '<div class="comment-content">'+ContentCom2+'</div></div></li>';
+
+$(document).ready(function(){
+if(GeterChanelCom2.indexOf(getid) > -1){}else{				
+$("#AllCom2"+idc).append(rekordyAddSC);
+GeterChanelCom2.push(getid);
+	}
+	});		
+});                    
+} 
+
+
+
+
+
+	
+
+
+
+function getSignals() {
+  var Groups = Parse.Object.extend("Groups");
+  var Query_Groups = new Parse.Query(Groups);
+    Query_Groups.equalTo("Key", key);
+    Query_Groups.first().then(function(Groupid){
+	var idGroup = Groupid.id;
+  var Signals = Parse.Object.extend("Signals");
+    var Query_Signals = new Parse.Query(Signals);
+	Query_Signals.equalTo("GroupID", idGroup);
+    Query_Signals.descending("Number");
+    Query_Signals.find({	
+	success: function(results) {
+	rekordy_nowe = '';
+	 for (var i in results){
+	  var idSignals = results[i].id;
+	   var Coin = results[i].get("CoinName");
+       var Pair = results[i].get("Pair");
+	   var BuyRange = results[i].get("BuyRange");
+	   var SellRange = results[i].get("SellRange");
+	   var data = results[i].get("date");
+	   var IMG = results[i].get("IMGfile");
+	   var isActive = results[i].get("Active");		
+	   var Symbol = Pair.split("/");
+	   AllCoins.push(Symbol[0]);
+	   if(isActive){var Active = "Active";}else{var Active = "History";} 
+	   
+	   
+	  
+	   rekordy_nowe += '<div class="col-lg-3 col-md-4 col-sm-6"> ';
+	   rekordy_nowe += '<div class="video-item">';
+	   rekordy_nowe += '<div class="thumb">';
+	   rekordy_nowe += '<div class="hover-efect"></div>';
+	   rekordy_nowe += '<small class="time">'+Symbol[0]+'</small>';
+	   rekordy_nowe += '<div class="TitleSignal"><img src="coins/64x64/'+IMG+'.png"><div class="krypto2"><span class="TittleCurrency">'+Coin+'</span><i class="prct percent'+Symbol[0]+'"></i><b class="'+Symbol[0]+'"></b></div></div></div>';
+	   rekordy_nowe += '<div class="video-info2"><a href="#" class="title-signals"><i style="margin-right 6px;" class="fa fa-bell-o"></i> '+Pair+'</a>';
+	   rekordy_nowe += '<div class="row row-sm stats-container"><div class="col-12 col-sm-12 stat-col"><div class="balance-signals">';
+	   rekordy_nowe += '<div class="stat-icon"><i class="fa fa-fire"></i></div>';
+	   rekordy_nowe += '<div class="stat"><div class="value"> BUY</div><div class="name"> '+BuyRange+' </div></div>';
+	   rekordy_nowe += '<div class="progress stat-progress"><div class="progress-bar" style="width: 75%;"></div></div></div></div>';
+	   rekordy_nowe += '<div class="col-12 col-sm-12 stat-col"><div class="balance-signals"><div class="stat-icon"><i class="fa fa-fire"></i></div>';
+	   rekordy_nowe += '<div class="stat"><div class="value"> Sell</div><div class="name"> '+SellRange+' </div></div>';
+	    rekordy_nowe += '<div class="progress stat-progress"><div class="progress-bar" style="width: 0%;"></div></div></div></div></div></div>  ';
+	    rekordy_nowe += '<div class="Likes"><span class="date" id="CountLikes'+idSignals+'"><i class="fa fa-rocket"></i>0</span>';
+	    rekordy_nowe += '<span class="date"><i class="fa fa-clock-o"></i>'+data+'</span>';
+	    rekordy_nowe += '<div class="Likes3"><span id="FunctionLikes'+idSignals+'" ><i class="fa fa-rocket"></i>Rocket</span></div></div></div></div>';
+	getLikes(idSignals);		
+	}
+	
+	$( "#SignalsGrup" ).html( rekordy_nowe );
+
+  },
+  error: function(error) {
+    console.log("Error: "+error.message);
+  }
+});
+});
+}
+
+
+function numberWithSpaces(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
+
+getMyCurrency();
+getSignals();
+getTypes();
+GetMyFriends();
+GetFriendsInvate();
+getMyInvests();
+getMyNotifications();
+GetAllPushNotifications();
+getMyNotificationsContent();
+getAllGroups();
+</script>
+	</body>
+</html>

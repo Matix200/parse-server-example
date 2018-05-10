@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<link rel="stylesheet" href="css/cryptocss.css" type="text/css"/>
+        <script type="text/javascript" src="js/parse.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
+				<script src="js/jquery.easy-autocomplete.js"></script> 
+		<link rel="stylesheet" href="css/easy-autocomplete.css"> 
+		<script src="js/crypto.js"></script> 
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css"  />
+		
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+      <!--======= header =======-->
+      <header>
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+					<a id="main-category-toggler" class="hidden-md hidden-lg hidden-md"  href="#">
+                    	<i class="fa fa-navicon"></i>
+                    </a>
+					<a id="main-category-toggler-close" class="hidden-md hidden-lg hidden-md" href="#">
+                    	<i class="fa fa-close"></i>
+                    </a>
+                    <div id="logo">
+                        <a href="01-home.html"><img src="" alt=""></a>
+                    </div>
+                </div><!-- // col-md-2 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs hidden-sm">
+                    <div class="search-form">
+                        <form id="search" action="#" method="post">
+                            <input type="text" id="SearchCrypto" placeholder="Search here cryptocurrency..."/>
+                            <input type="submit" value="Keywords" />
+                        </form>
+                    </div>
+                </div><!-- // col-md-3 -->
+                <div class="col-lg-3 col-md-3 col-sm-5 hidden-xs hidden-sm">
+                    <ul class="top-menu">
+                        <li><a href="01-home.html" id="MyAllInvest"><i class="fa fa-btc"></i> 0.00000000 BTC / <i class="fa fa-dollar"></i>  0.00 USD</a></li>                         
+                    </ul>
+                </div><!-- // col-md-4 -->
+                <div class="col-lg-2 col-md-2 col-sm-4 hidden-xs hidden-sm">
+                    <ul class="notifications">                        
+                      <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-users"></i>
+                            <span class="badge badge-color1 header-badge" id="FriendsInvateCount">0</span>
+                        </a>
+                              <ul class="dropdown-menu dropdown-menu-friend-requests ">
+                                <div id="FriendsInvate">
+
+                          </div>
+                              </ul>
+                        </li>
+                           <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="fa fa-bell-o"></i>
+                        	<span class="badge badge-color3 header-badge" id="NotificationsCount">0</span>
+                        </a>
+						<ul  class="dropdown-menu dropdown-notifications-items ">
+                          <div id="NotificationsPush">
+						  
+						  
+						  
+						  </div>
+                         <li><a href="#" class="all_notifications">All Notifications</a></li>   
+                        </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-sm">
+					  <div class="dropdown">
+                        <a data-toggle="dropdown" href="#" class="user-area">
+                            <div class="thumb"><img src="demo_img/user-1.png" alt=""></div>
+                            <h2 id="Mail"></h2>
+<i class="fa fa-angle-down"></i>
+                        </a>
+						<ul class="dropdown-menu account-menu">
+                           <li><a  class="logout"><i class="fa fa-sign-out color-4"></i>sign out</a></li>
+                        </ul>
+    				</div>
+                </div>
+            </div><!-- // row -->
+        </div><!-- // container-full -->
+      </header><!-- // header -->
+
+      <div id="main-category">
+        <div class="container-full">
+        	<div class="row">
+                <div class="col-md-12">
+                    <ul id="AllCryptoO" class="main-category-menu">                      
+                      
+					</ul>
+                </div><!-- // col-md-14 -->
+              </div><!-- // row -->
+          </div><!-- // container-full -->
+      </div><!-- // main-category -->
+
+	  <div class="site-output">
+      	<div class="col-md-2 no-padding-left hidden-sm hidden-xs">
+        	<div class="left-sidebar">
+            	<div id="no-sidebar-stick" >
+            	<ul class="menu-sidebar">
+					<li><a href="main.html"><i class="fa fa-home"></i>Dashboard</a></li>
+					<li><a href="cryptocurrency.html"><i class="fa fa-btc"></i>Cryptocurrency</a></li>
+					<li><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+                	<li><a href="signals.html"><i class="fa fa-bolt"></i>Signals</a></li>
+					</ul>
+					<ul class="menu-sidebar" id="AllGroups">
+					</ul>
+                </ul>
+				<ul class="menu-sidebar">
+                	<li><a href="editprofil.html"><i class="fa fa-edit"></i>edit profile</a></li>
+                	<li><a class="logout"><i class="fa fa-sign-out "></i>sing out</a></li>
+                </ul>
+                </div><!-- // sidebar-stick -->
+                <div class="clear"></div>
+            </div><!-- // left-sidebar -->
+        </div><!-- // col-md-2 -->
+<div id="mySidenav" class="sidenav">
+<div id="sidepanel">
+        <div id="profile">
+            <div class="wrap">
+                <img id="profile-img" src="http://emilcarlsson.se/assets/mikeross.png" class="online" alt="" />
+                <p id="MyNickName"></p>
+            </div>
+        </div>
+        <div id="search">
+            <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+            <input type="text" placeholder="Search contacts..." />
+        </div>
+        <div id="contacts">
+            <ul id="MyAllFriends">
+
+          
+            </ul>
+        </div>
+        <div id="bottom-bar">
+            <button id="addcontact"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> <span>Add contact</span></button>
+            <button id="settings-hide"><i id="arrow" class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <span>Hide contact</span></button>
+        </div>
+</div>
+
+</div>
+<div id="AllUserChats"></div>
+        <div id="all-output" class="col-md-10 ">
+
+			<div class="row">
+            	<div class="col-md-5">
+                    <div class="sidebar">
+
+                        <!--  News letter widget -->
+                        <div class="widget news-letter-widget">
+                          <div class="card-block">
+                           <h3 class="widget-title">Your Stats</h3>
+                                        <div class="row row-sm stats-container">
+                                            <div class="col-12 col-sm-6 stat-col">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-btc"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="BTCcount"> 0.00000000 </div>
+                                                    <div class="name"> BTC </div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+											</div>
+                                            <div class="col-12 col-sm-6">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-dollar"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="DollarCount"> 0.00000 </div>
+                                                    <div class="name"> Dollar </div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 25%;"></div>
+                                                </div>
+												</div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-line-chart"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="MonthlyCount"> $0.00 </div>
+                                                    <div class="name"> Monthly (30days) </div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 60%;"></div>
+                                                </div>
+                                            </div>
+											</div>
+                                            <div class="col-12 col-sm-6">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-line-chart"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="MonthlyPercent"> 0% </div>
+                                                    <div class="name"> Monthly (30days)</div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 34%;"></div>
+                                                </div>
+                                            </div>
+											</div>
+                                            <div class="col-12 col-sm-6 ">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-external-link"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="PositionCount"> 0</div>
+                                                    <div class="name"> Open positions </div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 49%;"></div>
+                                                </div>
+                                            </div>
+											</div>
+                                            <div class="col-12 col-sm-6">
+											<div class="balance">
+                                                <div class="stat-icon">
+                                                    <i class="fa fa-dollar"></i>
+                                                </div>
+                                                <div class="stat">
+                                                    <div class="value" id="TotalIncome"> $0.000 </div>
+                                                    <div class="name"> Total income </div>
+                                                </div>
+                                                <div class="progress stat-progress">
+                                                    <div class="progress-bar" style="width: 15%;"></div>
+                                                </div>
+                                            </div>
+											</div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <!--  // News letter widget -->
+
+                        
+
+                            
+
+
+                        
+
+                        
+
+                    </div>
+				</div>
+  <div class="col-md-7">
+
+<div class="sidebar">
+   <div class="widget news-letter-widget">
+<div class="selectedwidget"><h3 class="widget-title" style="width: 80%;float: left;">History</h3><select id="currencyoption" style="float: right;"size="1"><option>USD</option><option>EUR</option><option>BTC</option></select></div>                             
+
+                          <div class="card-block">
+						    
+                            <canvas id="line-chart" style="margin-top: -20px;" width="400" height="167"></canvas>
+                            <!-- // Video Player -->
+
+                          </div>     
+                        </div><!-- // content  -->
+                    </div><!-- // single-page  -->
+
+
+
+
+
+              </div>
+			  
+<div id="all-output2" style="margin-top: -15px" class="col-md-12 ">
+   <div class="widget" id="MyInvest">
+<div class="filter"><div class="row" style="margin-bottom: 20px;">
+						<div class="col-md-8">
+<h3 class="widget-title" style="width: 80%;float: left;">My Invest</h3>
+
+                        </div><!-- // col-md-8 -->
+                        <div class="col-md-4">
+                            <div class="search-form">
+                                <form id="search_history" action="#" method="post">
+                                    <input type="text" id="AddInvest" placeholder="Add cryptocurrency..."/>
+                                </form>
+                            </div>
+                        </div></div><!-- // col-md-4 -->
+                    </div><!-- // row -->
+   		<div class="table-currency">	
+		<table class="table" id="tableMyInvests">
+	<thead>
+		<tr>
+			<th>
+				Name
+			</th>
+			<th>
+				Volumen(24H)
+			</th>
+			<th>
+				Price
+			</th>
+			<th>
+				Change(24H)
+			</th>
+			<th>
+				Price Buy
+			</th>
+			<th>
+				Quantity
+			</th>
+			<th>
+				Value
+			</th>
+			<th>
+				<i class="fa fa-trash"></i>
+			</th>
+			<th>
+				<i class="fa fa-bell-o"></i>
+			</th>
+			<th>
+				<i class="fa fa-floppy-o"></i>
+			</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+</table>
+</div></div>	 
+                                
+                           </div>
+						  
+  <div class="col-md-12">
+
+
+   <div class="widget">
+   <h3 class="widget-title">Your Notifications</h3>   
+<div class="table-currency">	   
+<table class="table" id="TableNotifications">
+	<thead>
+		<tr>
+			<th>
+				Name
+			</th>
+			<th>
+				Price
+			</th>
+			<th>
+				Change(24H)
+			</th>
+			<th>
+				Signal Below
+			</th>
+			<th>
+				Signal Above
+			</th>
+			<th>
+				Exchange
+			</th>
+			<th>
+				Kind
+			</th>
+			<th>
+				<i class="fa fa-trash"></i>
+			</th>
+			<th>
+				<i class="fa fa-floppy-o"></i>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+</table>
+                           
+                       </div> </div><!-- // content  -->
+              </div>                
+            	
+
+                
+				
+                        
+                
+
+                    </div>
+
+                    <!-- Loading More Posts -->
+                    <div id="loading-more">
+                        <i class="fa fa-refresh faa-spin animated"></i> <span>Loading more</span>
+						
+                    </div>
+                    <!-- // Loading More Posts -->
+
+
+                </div>
+                		<div id="dialogReminder" title="Add Reminder">
+		<div id="reminderDialog"></div>
+	  <label>Signal Above</label >
+      <input  type="number" step="0.00000001" value="0.00000001" min="0.00000001" max="999.99" id="NotificationAbove" class="text ui-widget-content ui-corner-all">
+      <label>Signal Below</label>
+      <input type="number" step="0.00000001" value="0.00000001" min="0.00000001" max="999.99" id="NotificationBelow" class="text ui-widget-content ui-corner-all" >
+	  <div class="KindReminder">
+     <h4>Notifications</h4>
+
+    <div class="funkyradio">
+        <div class="funkyradio-success">
+            <input type="checkbox" name="checkbox" id="checkbox3" class="PlatformNote" />
+            <label for="checkbox3">Platform Notification</label>
+        </div>
+        <div class="funkyradio-danger">
+            <input type="checkbox" name="checkbox" id="checkbox4"  class="AlertNote"/>
+            <label for="checkbox4">Alert Notification</label>
+        </div>
+    </div>
+	  </div>
+          <div id="AddFriend" title="Add Friend" class="confirmNotifi">
+        <div class="content">
+            <div class="title">
+                <label for="modern">Search NickName</label>
+                <input type="text" id="inputFriends"/>
+            </div>
+            <div class="searched">
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.sticky-kit.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-blog.min.js"></script>
+<script type="text/javascript">
+Parse.initialize("cryptonsignals", "sjkfbkbagrheilhjfgakebgafevdgkjaflsvdgkjav");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+var MyMenuCoins = [];
+var MyCoinsMenu = [];
+var MyCoins = [];
+var MyCoinsNotifications = [];
+var MyCoinsAlert = [];
+
+var currentUser = Parse.User.current();
+        if (currentUser) {
+       console.log("jest użytkownik");
+var email = Parse.User.current().get("email");
+var Nick = Parse.User.current().get("NickName");
+$("#MyNickName").text(Nick);
+if(currentUser.get("IMGfile")){ var curl = currentUser.get("IMGfile").url();}else{var curl = "https://serwer1708065.home.pl/demo_img/user-1.png";}
+$("#profile-img").attr("src", curl) 
+$("#ProfilImage").attr("src", curl)            
+$("#Mail").text(email);    
+} else {
+       location.href = 'index.html';
+}
+
+$(document).on('click', '.logout', function(){
+Parse.User.logOut();
+location.href = 'index.html';	
+});
+	
+
+
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [0,1,2,3,4,5,6,7,8,9,10,11,12],
+    datasets: [{ 
+        data: [0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000],
+        label: "BTC",
+        borderColor: "#3e95cd",
+        fill: false,
+		
+		
+      }
+    ]
+  },
+  options: {
+   legend:{
+   display: false,
+   },
+    title: {
+      display: false,
+    }
+  }
+});
+
+    
+     $( function() {
+    dialog = $( "#dialogReminder" ).dialog({
+      autoOpen: false,
+	  height: 400,
+      width: 300,
+      modal: true,
+      buttons: {
+	    "Send": AddNotifications, 
+	     Cancel: function() {
+		           dialog.dialog( "close" );
+        }, 
+      },
+    });
+  } );
+
+   $( function() {
+    $( "#AddFriend" ).dialog({
+      autoOpen: false,
+    });
+  } );
+
+      $(document).on('click', '#addcontact', function(){
+      $( "#AddFriend" ).dialog( "open" );
+    });	
+    
+      function AddNotifications(){
+  var Kinds = [];
+  var PlatformNote = $('.PlatformNote').is(':checked');
+  if(PlatformNote == true){Kinds.push("Platform");}
+  var PlatformAlert = $('.AlertNote').is(':checked');
+    if(PlatformAlert == true){Kinds.push("Alert");}
+  var below = $("#NotificationBelow").val();
+  var above = $("#NotificationAbove").val();
+  var Symbol = $("#InfoNotifications").attr("symbol");
+  var Market = $("#InfoNotifications").attr("market");
+  var Exchange = $("#InfoNotifications").attr("exchange");
+  var CoinName = $("#InfoNotifications").attr("coin");
+    var id = $("#InfoNotifications").attr("idcrypto");
+    var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+  var MyNotifications = Parse.Object.extend("MyNotifications");
+  MyNotifications  = new MyNotifications();
+MyNotifications.set("CoinName", CoinName);
+MyNotifications.set("Symbol", Symbol);
+MyNotifications.set("Exchange", Exchange);
+MyNotifications.set("Market", Market);
+MyNotifications.set("CryptoCurrency", CryptoCurrency.createWithoutData(id));
+MyNotifications.set("BelowPrice", below);
+MyNotifications.set("AbovePrice", above);
+MyNotifications.set("Symbol", Symbol);
+MyNotifications.set("KindNotifications", Kinds);
+MyNotifications.save().then(function(obj) {
+var user = Parse.User.current();
+var relation = user.relation("Notifications");
+relation.add(obj);
+user.save().then(function(obj2) {
+ $( "#dialogReminder" ).dialog( "close" );  
+  getMyNotifications();
+ }); 
+ }); 
+  }
+
+
+var AllTypesJSON = [];
+  function getTypes(){
+var AllTypes = [];
+  var Bittrex = Parse.Object.extend("Bittrex");
+  var Binance = Parse.Object.extend("Binance");
+    var Query_Binance = new Parse.Query(Binance);
+    Query_Binance.exists("Chart");
+	Query_Binance.limit(250);
+	Query_Binance.include("CryptoCurrency");
+    Query_Binance.find().then(function(BinanceCoins){
+	for(var i in BinanceCoins){
+    var Coin = BinanceCoins[i].get("Chart");
+	var CoinName = BinanceCoins[i].get("CoinName");
+	var Symbol = BinanceCoins[i].get("Symbol");
+	var Market = BinanceCoins[i].get("Market");
+	var exchange = "Binance";
+	var Pointer = BinanceCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	var ID = Pointer.id;
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	AllTypesJSON.push({ALL: exchange+":"+Symbol+":"+Market+":"+CoinName+":"+ID+":"+IMG, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+	var Query_Bittrex = new Parse.Query(Bittrex);
+	Query_Bittrex.exists("Chart");
+	Query_Bittrex.limit(250);
+	Query_Bittrex.include("CryptoCurrency");
+    Query_Bittrex.find().then(function(BittrexCoins){
+	for(var i in BittrexCoins){
+    var Coin = BittrexCoins[i].get("Chart");
+	var CoinName = BittrexCoins[i].get("CoinName");
+	var Symbol = BittrexCoins[i].get("Symbol");
+	var Market = BittrexCoins[i].get("Market");
+	var exchange = "Bittrex";
+	var Pointer = BittrexCoins[i].get("CryptoCurrency");
+	var IMG = Pointer.get("IMGfile");
+	var ID2 = Pointer.id;
+	if(AllTypes.indexOf(Coin) > -1){}else{
+	AllTypes.push(Coin);
+	var Allinfo = Coin.split(":");
+	AllTypesJSON.push({ALL: exchange+":"+Symbol+":"+Market+":"+CoinName+":"+ID2+":"+IMG, CoinNames: CoinName, Exchange: Allinfo[0], Pair: Allinfo[1],IMGfile: IMG});
+	}}
+
+var options = {
+	data: AllTypesJSON,
+	list: {
+		maxNumberOfElements: 12,
+		match: {
+			enabled: true
+		},
+        onClickEvent: function() {
+			let coin  = $("#SearchCrypto").getSelectedItemData().IMGfile;
+            let ALL  = $("#SearchCrypto").getSelectedItemData().ALL;
+            var alltosplit = ALL.split(':');
+            var link = "crypto.html#"+coin+"#"+alltosplit[0].toUpperCase()+":"+alltosplit[1]+alltosplit[2];
+            location.href = link;
+            
+
+		}
+	},
+	getValue: "ALL",
+	template: {
+		type: "custom",
+		method: function(value, item) {
+			return "<img class='imgsearch' src='coins/"+item.IMGfile+".png'><b>" + item.CoinNames + "</b> | " + item.Pair + " | " + item.Exchange;
+		}
+	}
+};
+
+
+getAlltoAdd()
+var ALLTOP = $("#SearchCrypto").easyAutocomplete(options);	
+});
+});
+}
+
+function getAlltoAdd(){
+var options2 = {
+	data: AllTypesJSON,
+	list: {
+		maxNumberOfElements: 12,
+		match: {
+			enabled: true
+		},
+		onClickEvent: function() {
+			var value = $("#AddInvest").getSelectedItemData().ALL;
+            AddToMyInvest(value);
+
+		}
+	},
+	getValue: "ALL",
+	template: {
+		type: "custom",
+		method: function(value, item) {
+			return "<img class='imgsearch' src='coins/"+item.IMGfile+".png'><b>" + item.CoinNames + "</b> | " + item.Pair + " | " + item.Exchange;
+		}
+	}
+};
+var ALLTOP2 = $("#AddInvest").easyAutocomplete(options2);
+
+}
+
+
+function AddToMyInvest(all){
+var rekordyI = '';
+$("#AddInvest").val("");
+var CoinDetails = all.split(":");
+var Exchange = CoinDetails[0];
+var Symbol = CoinDetails[1];
+var Market = CoinDetails[2];
+var CoinName = CoinDetails[3];
+var ID = CoinDetails[4];
+var IMG = CoinDetails[5];
+var FavoriteCoin = Exchange+'-'+Symbol+'-'+Market;
+if(MyCoins.indexOf(FavoriteCoin) > -1){}else{
+MyCoins.push(FavoriteCoin);}
+ rekordyI  += '<tr><td exchange="'+Exchange+'" img="'+IMG+'" symbol="'+Symbol+'" id="'+ID+'" coin="'+CoinName+'" market="'+Market+'" class="coin"><img src="coins/'+IMG+'.png"><span>'+Symbol+'/'+Market+'</span></td>';
+	   rekordyI += '<td class="Volumen24'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td class="Price'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td class="Percent'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td><i class="fa fa-usd"></i><input value="0.00000001" id="inputTableB'+ID+'" type="number" step="0.00000001" min="0.00000001" max="999.99"></input></td>';
+	   rekordyI += '<td><input type="text" class="qty'+FavoriteCoin+' inputTable" id="inputTableQ'+ID+'" type="number" step="0.00000001" min="0.00000001" max="999.99" value="0.00"></input></td>';
+	   rekordyI += '<td class="value'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';	   
+	   rekordyI += '<td>Save</td>';	
+	   rekordyI += '<td></td>';	
+	   rekordyI += '<td><i style="color: green; font-size: 14px" id="SaveNewInvest" class="fa fa-floppy-o"></i></td></tr>';	
+	
+	$(document).ready(function(){
+	$( "#tableMyInvests tbody" ).append( rekordyI );
+	});
+
+}
+
+
+$(document).on('click', '#SaveNewInvest', function(){
+row = $(this).parents('tr');
+var postACL = new Parse.ACL(); 
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+postACL.setWriteAccess(Parse.User.current().id, true);
+postACL.setReadAccess(Parse.User.current().id, true);
+var exchange = $(row.children().get(0)).attr("exchange");
+var Coin = $(row.children().get(0)).attr("coin");
+var market = $(row.children().get(0)).attr("market");
+var IDCoin = $(row.children().get(0)).attr("id");
+var bPrice = $("#inputTableB"+IDCoin).val();
+var Qty = $("#inputTableQ"+IDCoin).val();
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+var Query = new Parse.Query(CryptoCurrency);
+Query.equalTo("CoinName",Coin);
+Query.first().then(function(crypto){
+var Symbol = crypto.get("Symbol");
+var id = crypto.id;
+var img = crypto.get("IMGfile");
+var MyInvests = Parse.Object.extend("MyInvests");
+MyInvests = new MyInvests();
+MyInvests.set("CoinName", Coin);
+MyInvests.set("Symbol", Symbol);
+MyInvests.set("IMGfile", img);
+MyInvests.set("Market", market);
+MyInvests.set("Exchange", exchange);
+MyInvests.set("PriceBuy", bPrice);
+MyInvests.set("Qty", Qty);
+MyInvests.set("CryptoCurrency", CryptoCurrency.createWithoutData(id));
+MyInvests.set("UserPointer", Parse.User.current());
+MyInvests.setACL(postACL);
+MyInvests.save().then(function(obj) {
+var user = Parse.User.current();
+var relation = user.relation("MyInvest");
+relation.add(obj);
+user.save().then(function(obj2) {
+getMyInvests();
+	});
+});
+});
+});
+
+
+
+function getMyInvests() {
+var rekordyI = '';
+var currentUser = Parse.User.current();
+var user = Parse.User.current();
+var relations = user.relation("MyInvest");
+	var query = relations.query();
+	query.include("CryptoCurrency");
+	query.find().then(function(results){
+     if(results.length > 0) {  
+	 for (var i in results){
+	   var id = results[i].id;
+	   var Coin = results[i].get("CoinName");
+       var Symbol = results[i].get("Symbol");
+	   var Market = results[i].get("Market");
+	   var PriceBuy = results[i].get("PriceBuy");
+	   var exchange = results[i].get("Exchange");
+	   var IMG = results[i].get("IMGfile");
+	   var Qty = results[i].get("Qty");
+	   if(Market == "BTC") {var inputvalue = '<i class="fa fa-btc"></i><input value="'+PriceBuy+'" id="inputTableB'+id+'" class="inputTable" type="number" step="0.00000001" min="0.00000001" max="999.99"></input>'}
+	   if(Market == "USDT") {var inputvalue = '<i class="fa fa-usd"></i><input value="'+PriceBuy+'" id="inputTableB'+id+'" class="inputTable" type="number" step="0.00000001" min="0.00000001" max="999.99"></input>'}
+	   if(Market == "ETH") {var inputvalue = '<i class="fa fa-eth"></i><input value="'+PriceBuy+'" id="inputTableB'+id+'" class="inputTable" type="number" step="0.00000001" min="0.00000001" max="999.99"></input>'}
+	   if(Market == "BNB") {var inputvalue = '<i class="fa fa-bnb"></i><input value="'+PriceBuy+'" id="inputTableB'+id+'" class="inputTable" type="number" step="0.00000001" min="0.00000001" max="999.99"></input>'}
+	  
+	   var FavoriteCoin = exchange+'-'+Symbol+'-'+Market;
+	   if(MyCoins.indexOf(FavoriteCoin) > -1){}else{
+	   	MyCoins.push(FavoriteCoin);
+	   }
+
+
+	   
+	  
+	   rekordyI  += '<tr><td exchange="'+exchange+'" img="'+IMG+'" symbol="'+Symbol+'" id="'+id+'" coin="'+Coin+'" market="'+Market+'" class="coin"><img src="coins/'+IMG+'.png"><span>'+Symbol+'/'+Market+'</span></td>';
+	   rekordyI += '<td class="Volumen24'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td class="Price'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td class="Percent'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyI += '<td>'+inputvalue+'</td>';
+	   rekordyI += '<td><input type="text" class="qty'+FavoriteCoin+' inputTable" id="inputTableQ'+id+'" type="number" step="0.00000001" min="0.00000001" max="999.99" value="'+Qty+'"></input></td>';
+	   rekordyI += '<td class="value'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';	   
+	 //  rekordyI += '<td><select id="currencyoption"><option>Bittrex</option><option>Binance</option><option>Poloniex</option><option>HitBTC</option></select></td>';
+	   rekordyI += '<td><i id="removeMyInvest" class="fa fa-minus-circle"></i></td>';	
+	   rekordyI += '<td><i id="notificationInvest" class="fa fa-bell"></i></td>';	
+	   rekordyI += '<td><i id="correctInvest" class="fa fa-floppy-o"></i></td></tr>';	
+
+	}}else{
+    rekordyI += '<tr><td>You do not have any invest</td></tr>';
+
+    }
+
+	$(document).ready(function(){
+	$( "#tableMyInvests tbody" ).html( rekordyI );
+setInterval(getValues, 2500);
+	});
+
+});
+}
+    
+    $(document).on('click', '#notificationInvest', function(){
+        console.log('aaa');
+row = $(this).parents('tr');
+var rekordy = '';
+var exchange = $(row.children().get(0)).attr("exchange");
+var Symbol = $(row.children().get(0)).attr("symbol");
+var IMG = $(row.children().get(0)).attr("img");
+var market = $(row.children().get(0)).attr("market");
+var Coin = $(row.children().get(0)).attr("coin");
+
+var CryptoCurrency = Parse.Object.extend("CryptoCurrency");
+    var Query_CryptoCurrency = new Parse.Query(CryptoCurrency);
+    Query_CryptoCurrency.equalTo("CoinName", Coin);
+    Query_CryptoCurrency.first().then(function(cryptocurrency){
+	var id = cryptocurrency.id;
+
+
+var FavoriteCoin = exchange+'-'+Symbol+'-'+market;
+if(MyCoinsMenu.indexOf(FavoriteCoin) > -1){}else{
+MyCoinsMenu.push(FavoriteCoin);}
+	   rekordy  += '<li id="InfoNotifications" idcrypto="'+id+'" coin="'+Coin+'" exchange="'+exchange+'" symbol="'+Symbol+'" market="'+market+'" class="color-2">';
+	   rekordy += '<a href="02-category.html">';
+	   rekordy += '<img src="coins/'+IMG+'.png">';
+rekordy += '<div class="krypto">';
+	   rekordy += '<span class="AllC'+FavoriteCoin+'"></span>';
+	   rekordy += '<b class="priceC'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:10px"></i></b>';		
+	   rekordy += '</div></a></li>';
+$(document).ready(function(){	   
+$( "#reminderDialog" ).html( rekordy );
+ $( "#dialogReminder" ).dialog( "open" );  
+ });
+});
+});
+
+
+
+
+function getValues(){
+var AllDollarBinance = [];
+var AllDollarBittrex = [];
+if(typeof AllBinanceData !== "undefined"){
+for(var i in MyCoins){
+var CoinsVal = MyCoins[i].split("-");
+if(CoinsVal[0] == "Binance"){
+var Pair = CoinsVal[1]+CoinsVal[2];
+var foundF = getBinanceByCode(Pair);
+if(typeof foundF[0].Last == "undefined") {var Price = "0.00000000"}else {var Price = foundF[0].Last;}
+if(typeof foundF[0].Volumen == "undefined") {var Volumen = "0.00000000"}else {var Volumen = foundF[0].Volumen;}
+if(typeof foundF[0].Prev == "undefined") {var Percent = "0.00000000"}else {var Percent = foundF[0].Prev;}
+if(CoinsVal[2] == "USDT"){
+if(Price > 1){ var PriceA = parseFloat(Price).toFixed(2);}
+if(Price < 1){ var PriceA = parseFloat(Price).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var change = parseFloat(Percent).toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*PriceA).toFixed(2);
+AllDollarBinance.push(MyValue);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Per);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+if(CoinsVal[2] == "BTC"){
+var getBTCPrice = getBinanceByCode("BTCUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var change = parseFloat(Percent).toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBinance.push(MyValue);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-btc"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Per);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-btc"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+if(CoinsVal[2] == "ETH"){
+var getBTCPrice = getBinanceByCode("ETHUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var change = parseFloat(Percent).toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBinance.push(MyValue);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-eth"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Per);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-eth"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+if(CoinsVal[2] == "BNB"){
+var getBTCPrice = getBinanceByCode("BNBUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var change = parseFloat(Percent).toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBinance.push(MyValue);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-bnb"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Per);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-bnb"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+}
+if(CoinsVal[0] == "Bittrex"){
+var Pair = CoinsVal[2]+"-"+CoinsVal[1];
+var foundx = getBittrexByCode(Pair);
+var Price = foundx[0].Last;
+var Volumen = foundx[0].Volumen;
+var Percent = foundx[0].Prev;
+
+if(CoinsVal[2] == "USDT"){
+if(Price > 1){ var PriceA = parseFloat(Price).toFixed(2);}
+if(Price < 1){ var PriceA = parseFloat(Price).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBittrex.push(MyValue);    
+if(change > 0 ) var Perc = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Perc = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Perc);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));}
+if(CoinsVal[2] == "BTC"){
+var getBTCPrice = getBittrexByCode("USDT-BTC");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBittrex.push(MyValue);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+if(change > 0 ) var Perc = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Perc = '<i style="color: red;"> ('+change+'%)</i>';
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-btc"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Perc);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-btc"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+if(CoinsVal[2] == "ETH"){
+var getBTCPrice = getBittrexByCode("USDT-ETH");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var Vol = parseFloat(Volumen).toFixed(2);
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+var qty = $('.qty'+MyCoins[i]).attr("value");
+var MyValue = (parseFloat(qty)*USDp).toFixed(2);
+AllDollarBittrex.push(MyValue);
+if(change > 0 ) var Perc = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Perc = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".Volumen24"+MyCoins[i]).html('<i class="fa fa-eth"></i> '+numberWithSpaces(Vol));
+$(".Percent"+MyCoins[i]).html(Perc);
+$(".Price"+MyCoins[i]).html('<i class="fa fa-eth"></i> '+numberWithSpaces(PriceA));
+$(".value"+MyCoins[i]).html('<i class="fa fa-usd"></i> '+numberWithSpaces(MyValue));
+}
+}
+
+}
+var countAllBinance = 0;
+var countAllBittrex = 0;
+
+var getBTCBinance = getBittrexByCode("USDT-BTC");
+var PriceBinance = getBTCBinance[0].Last;
+var getBTCBittrex = getBinanceByCode("BTCUSDT");
+var PriceBittrex = getBTCBittrex[0].Last;
+for(var x in AllDollarBinance){
+countAllBinance = countAllBinance+parseFloat(AllDollarBinance[x]);
+}
+for(var x in AllDollarBittrex){
+countAllBittrex = countAllBittrex+parseFloat(AllDollarBittrex[x]);
+}
+var BTCValBinance = countAllBinance/parseFloat(PriceBinance);
+var BTCValBittrex = countAllBittrex/parseFloat(PriceBittrex);
+console.log(countAllBittrex, countAllBinance, BTCValBinance, BTCValBittrex);
+AllBTC = (BTCValBinance+BTCValBittrex).toFixed(8);
+AllDollar = (countAllBittrex+countAllBinance).toFixed(2);
+$("#MyAllInvest").html('<i class="fa fa-btc"></i> '+AllBTC+' BTC / <i class="fa fa-dollar"></i>  '+numberWithSpaces(AllDollar)+' USD</a>');
+$("#BTCcount").html(AllBTC);
+$("#DollarCount").html(numberWithSpaces(AllDollar));
+}else{}
+}
+
+
+
+
+$(document).on('click', '#removeMyInvest', function(){
+row = $(this).parents('tr');
+var IDCoin = $(row.children().get(0)).attr("id");
+var user = Parse.User.current();
+var relations = user.relation("MyInvest");
+	var query = relations.query();
+	query.equalTo("objectId",IDCoin);
+	query.first().then(function(crypto){
+	crypto.destroy();
+
+
+
+getMyInvests();
+});
+});
+
+$(document).on('click', '#correctInvest', function(){
+row = $(this).parents('tr');
+var IDCoin = $(row.children().get(0)).attr("id");
+var bPrice = $("#inputTableB"+IDCoin).val();
+var Qty = $("#inputTableQ"+IDCoin).val();
+var user = Parse.User.current();
+var relations = user.relation("MyInvest");
+	var query = relations.query();
+query.equalTo("objectId",IDCoin);
+query.first().then(function(crypto){
+crypto.set("Qty", Qty);
+crypto.set("PriceBuy",bPrice);
+crypto.save().then(function(obj) {
+getMyInvests();});
+});
+});
+
+
+function getMyNotifications() {
+var rekordyN = '';
+var currentUser = Parse.User.current();
+var user = Parse.User.current();
+var relations = user.relation("Notifications");
+	var query = relations.query();
+	query.include("CryptoCurrency");
+	query.find().then(function(results){
+        if(results.length > 0) { 
+	 for (var i in results){
+	   var id = results[i].id;
+	   var Coin = results[i].get("CoinName");
+       var Symbol = results[i].get("Symbol");
+	   var Market = results[i].get("Market");
+	   var exchange = results[i].get("Exchange");
+	   var Pointer = results[i].get("CryptoCurrency");
+	   var IMG = Pointer.get("IMGfile");
+	   var BelowPrice = results[i].get("BelowPrice");
+	   var AbovePrice = results[i].get("AbovePrice");
+	   var Kind = results[i].get("KindNotifications");
+	   var FavoriteCoin = exchange+'-'+Symbol+'-'+Market;
+	   var FavoriteCoinAlert = exchange+'-'+Symbol+'-'+Market+'-'+BelowPrice+'-'+AbovePrice+'-'+id+'-'+Coin;
+	   if(MyCoinsNotifications.indexOf(FavoriteCoin) > -1){}else{
+	   	MyCoinsNotifications.push(FavoriteCoin);
+		MyCoinsAlert.push(FavoriteCoinAlert);
+	   }
+
+
+	   
+	  
+	   rekordyN  += '<tr><td exchange="'+exchange+'" img="'+IMG+'" symbol="'+Symbol+'" id="'+id+'" coin="'+Coin+'" market="'+Market+'" class="coin"><img src="coins/'+IMG+'.png"><span>'+Symbol+'/'+Market+'</span></td>';
+	   rekordyN += '<td class="PriceN'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyN += '<td class="PercentN'+FavoriteCoin+'"><i class="fa fa-circle-o-notch fa-spin" style="font-size:15px"></i></td>';
+	   rekordyN += '<td><i class="fa fa-dollar"></i><input value="'+BelowPrice+'" id="inputTableBelow'+id+'" class="inputTable" type="number" step="0.00000001" min="0.00000001" max="999.99"></input></td>';
+	   rekordyN += '<td><input type="text" class="Above'+FavoriteCoin+' inputTable" id="inputTableAbove'+id+'" type="number" step="0.00000001" min="0.00000001" max="999.99" value="'+AbovePrice+'"></input></td>';
+	   rekordyN += '<td class="Exchange'+FavoriteCoin+'">'+exchange+'</td>';	
+	   rekordyN += '<td class="Kind'+FavoriteCoin+'">'+Kind+'</td>';	   
+	   rekordyN += '<td><i id="removeMyInvest" class="fa fa-minus-circle"></i></td>';	
+	   rekordyN += '<td><i id="correctInvest" class="fa fa-floppy-o"></i></td></tr>';	
+
+	}}else{
+
+        rekordyN += '<tr><td>You do not have any Notification</td></tr>';
+    }
+
+	$(document).ready(function(){
+	$( "#TableNotifications tbody" ).html( rekordyN );
+setInterval(getValuesN, 2000);
+setInterval(GetAlerts, 2000);
+	});
+
+});
+}
+
+
+function getValuesN(){
+
+if(typeof AllBinanceData !== "undefined"){
+for(var i in MyCoinsNotifications){
+var CoinsVal = MyCoinsNotifications[i].split("-");
+if(CoinsVal[0] == "Binance"){
+var Pair = CoinsVal[1]+CoinsVal[2];
+var foundF = getBinanceByCode(Pair);
+if(typeof foundF[0].Last == "undefined") {var Price = "0.00000000"}else {var Price = foundF[0].Last;}
+if(typeof foundF[0].Volumen == "undefined") {var Volumen = "0.00000000"}else {var Volumen = foundF[0].Volumen;}
+if(typeof foundF[0].Prev == "undefined") {var Percent = "0.00000000"}else {var Percent = foundF[0].Prev;}
+if(CoinsVal[2] == "USDT"){
+if(Price > 1){ var PriceA = parseFloat(Price).toFixed(2);}
+if(Price < 1){ var PriceA = parseFloat(Price).toFixed(5);}
+var change = parseFloat(Percent).toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-usd'></i> "+numberWithSpaces(PriceA));
+}
+if(CoinsVal[2] == "BTC"){
+var getBTCPrice = getBinanceByCode("BTCUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var change = parseFloat(Percent).toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-btc'></i> "+numberWithSpaces(PriceA));
+}
+if(CoinsVal[2] == "ETH"){
+var getBTCPrice = getBinanceByCode("ETHUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var change = parseFloat(Percent).toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-eth'></i> "+numberWithSpaces(PriceA));
+}
+if(CoinsVal[2] == "BNB"){
+var getBTCPrice = getBinanceByCode("BNBUSDT");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var change = parseFloat(Percent).toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-bnb'></i> "+numberWithSpaces(PriceA));
+}
+}
+if(CoinsVal[0] == "Bittrex"){
+var Pair = CoinsVal[2]+"-"+CoinsVal[1];
+var foundx = getBittrexByCode(Pair);
+var Price = foundx[0].Last;
+var Volumen = foundx[0].Volumen;
+var Percent = foundx[0].Prev;
+if(CoinsVal[2] == "USDT"){
+if(Price > 1){ var PriceA = parseFloat(Price).toFixed(2);}
+if(Price < 1){ var PriceA = parseFloat(Price).toFixed(5);}
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-usd'></i> "+numberWithSpaces(PriceA));
+}
+if(CoinsVal[2] == "BTC"){
+var getBTCPrice = getBittrexByCode("USDT-BTC");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-btc'></i> "+numberWithSpaces(PriceA));
+}
+if(CoinsVal[2] == "ETH"){
+var getBTCPrice = getBittrexByCode("USDT-ETH");
+var USDPrice = getBTCPrice[0].Last;
+var PriceA = parseFloat(Price).toFixed(8);
+var USDp = (USDPrice*PriceA);
+if(USDp > 1){ var USDvalue = parseFloat(USDp).toFixed(2);}
+if(USDp < 1){ var USDvalue = parseFloat(USDp).toFixed(5);}
+var percents = getPercentageChange(Price, Percent);
+var change = percents.toFixed(2);
+if(change > 0 ) var Per = '<i style="color: green;"> ('+change+'%)</i>';
+if(change < 0 ) var Per = '<i style="color: red;"> ('+change+'%)</i>'; 
+$(".PercentN"+MyCoinsNotifications[i]).html(Per);
+$(".PriceN"+MyCoinsNotifications[i]).html("<i class='fa fa-eth'></i> "+numberWithSpaces(PriceA));
+}
+}
+
+}							      
+}else{
+}
+}
+
+
+
+
+function numberWithSpaces(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
+
+
+
+
+SubscribeMyMessage();
+GetSubscribeFriends();
+GetSubscribeAcceptedFriends();
+GetMyFriends();
+GetFriendsInvate();
+
+getMyNotifications();
+GetAllPushNotifications();
+getMyNotificationsContent();    
+getMyCurrency();
+getAllGroups();
+getMyInvests();
+getTypes();
+</script>
+	</body>
+</html>

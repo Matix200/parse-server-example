@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "crypto-socket",
+        "scope": null,
+        "escapedName": "crypto-socket",
+        "name": "crypto-socket",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/root"
+    ]
+  ],
+  "_from": "crypto-socket@latest",
+  "_id": "crypto-socket@3.0.0",
+  "_inCache": true,
+  "_location": "/crypto-socket",
+  "_nodeVersion": "4.2.6",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/crypto-socket-3.0.0.tgz_1514441440917_0.12590461038053036"
+  },
+  "_npmUser": {
+    "name": "redcap3000",
+    "email": "redcap3000@gmail.com"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "crypto-socket",
+    "scope": null,
+    "escapedName": "crypto-socket",
+    "name": "crypto-socket",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/crypto-socket/-/crypto-socket-3.0.0.tgz",
+  "_shasum": "af28a78d767827bf56484965296258e48ece3134",
+  "_shrinkwrap": null,
+  "_spec": "crypto-socket",
+  "_where": "/root",
+  "author": {
+    "name": "Ronaldo Barbachano"
+  },
+  "bugs": {
+    "url": "https://github.com/redcap3000/crypto-socket/issues"
+  },
+  "dependencies": {
+    "autobahn": "17.5.2",
+    "bufferutil": "^3.0.2",
+    "faye-websocket": "0.11.1",
+    "node.bittrex.api": "^0.5.1",
+    "pusher-client": "1.1.0",
+    "utf-8-validate": "^3.0.3"
+  },
+  "description": "Basic cryptocurrency ticker supporting multiple exchanges and currencies with websockets where available.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "af28a78d767827bf56484965296258e48ece3134",
+    "tarball": "https://registry.npmjs.org/crypto-socket/-/crypto-socket-3.0.0.tgz"
+  },
+  "gitHead": "3eec00ba17e298a5e5ddd51a8e98ba9d7339c94c",
+  "homepage": "https://github.com/redcap3000/crypto-socket",
+  "keywords": [
+    "crypto",
+    "websocket",
+    "API",
+    "bitcoin",
+    "ethereum",
+    "litecoin",
+    "lisk",
+    "finance",
+    "ticker"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "redcap3000",
+      "email": "redcap3000@gmail.com"
+    }
+  ],
+  "name": "crypto-socket",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcap3000/crypto-socket.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.0"
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Post – Video Sharing HTML Template</title>
+        <meta name="keywords" content="Blog website templates" />
+        <meta name="description" content="Author - Personal Blog Wordpress Template">
+        <meta name="author" content="Rabie Elkheir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/parse.js"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body class="sing-up-page">
+      <!--======= log_in_page =======-->
+      <div id="log-in" class="site-form log-in-form">
+      
+      	<div id="log-in-head">
+        	<h1>Sing Up</h1>
+            <div id="logo"><a href="01-home.html"><img src="img/logo.png" alt=""></a></div>
+        </div>
+        
+        <div class="form-output">
+        	<form>
+                <div class="form-group label-floating">
+                    <label class="control-label">Your Nick name</label>
+                    <input id="NickName" class="form-control" placeholder="" type="text">
+                </div>
+				<div class="form-group label-floating">
+					<label class="control-label">Your Email</label>
+					<input id="mail" class="form-control" placeholder="" type="email">
+				</div>
+				<div class="form-group label-floating">
+					<label class="control-label">Your Password</label>
+					<input id="password1" class="form-control" placeholder="" type="password">
+				</div>
+                
+				<div class="form-group label-floating">
+					<label class="control-label">Confirm Your Password</label>
+					<input id="password2" class="form-control" placeholder="" type="password">
+				</div>
+
+              </form>  
+			  <button id="registerfunction" class="btn btn-lg btn-primary full-width">Complete sign up !</button>
+
+			  <div class="or"></div>
+
+
+
+				<p>you have an account? <a href="index.html"> Sing in !</a> </p>
+            
+        </div>
+      </div>
+<script type="text/javascript">
+Parse.initialize("cryptonsignals", "sjkfbkbagrheilhjfgakebgafevdgkjaflsvdgkjav");
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
+
+$("#registerfunction").click(function(event) {
+var mail = $("#mail").val();
+var password1 = $("#password1").val();
+var password2 = $("#password2").val();
+var NickName = $("#NickName").val();
+
+if(password1 == password2){
+if(NickName.length > 5){
+
+var user = new Parse.User();
+user.set("username", NickName.toLowerCase());
+user.set("password", password1);
+user.set("email", mail.toLowerCase());
+user.set("NickName", NickName);
+
+user.signUp(null, {
+  success: function(user) {
+    location.href = 'main.html';
+  },
+  error: function(user, error) {
+    // Show the error message somewhere and let the user try again.
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+}else{alert("Nick name must contain at least 6 characters");}
+}else{alert("Please enter the same Password as above");}
+
+
+
+
+
+});
+
+	
+
+</script>
+	</body>
+
+
+</html>
