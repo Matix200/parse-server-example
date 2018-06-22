@@ -4,6 +4,7 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var S3Adapter = require('@parse/s3-files-adapter');
+var client = require('redis').createClient(process.env.REDIS_URL);
 var path = require('path');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI
