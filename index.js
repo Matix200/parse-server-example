@@ -32,7 +32,7 @@ var api = new ParseServer({
   javascriptKey: process.env.JS_KEY || '',
   liveQuery: {
     classNames: ["ForumChanel", "ForumChanelComments", "ForumChanelComments2", "PushNotifications", "Friends", "Message"],
-  //  redisURL: process.env.REDIS_URL
+    redisURL: process.env.REDIS_URL
   },
  filesAdapter: s3Adapter,
  verifyUserEmails: true,
